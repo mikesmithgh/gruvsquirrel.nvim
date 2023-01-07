@@ -18,7 +18,7 @@
     > A port of gruvbox community theme to lua with treesitter support!
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
     > A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme. Includes extra themes for Kitty, Alacritty, iTerm and Fish.
-- [rose-pine/noevim](https://github.com/rose-pine/neovim)
+- [rose-pine/neovim](https://github.com/rose-pine/neovim)
     > All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 - [badwolf](https://github.com/sjl/badwolf)
     > A color scheme for Vim, pieced together by Steve Losh.
