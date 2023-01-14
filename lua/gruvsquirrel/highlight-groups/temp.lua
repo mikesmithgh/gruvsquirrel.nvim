@@ -1,0 +1,115 @@
+-- temporary hardcoded groups until I am able to work through it
+-- this is a hack
+
+
+-- local colors_status, colors = pcall(require, "gruvbox.palette")
+-- if not colors_status then
+--   print(" beep beep boop boop does not compute: colors")
+--   return {}
+-- end
+-- local groups_status, groups = pcall(require, "gruvbox.groups")
+-- if not groups_status then
+--   print(" beep beep boop boop does not compute: groups")
+--   return {}
+-- end
+--
+-- local palette_overrides = {
+--   black0 = "#000000",
+--   black1 = "#070707",
+--   black2 = "#0d0d0d",
+--   black3 = "#1a1a1a",
+--   -- bright_green = "#a7c080",
+--   bright_green = "#8faa80",
+--   bright_yellow = "#dbbc5f",
+--   bright_red = "#ff6961",
+--   light1 = "#c7c7c7",
+--   bright_aqua = "#9dbad4",
+--   bright_blue = "#83a598", -- default
+--   mint = "#a9d5c4",
+--   dim_light1 = "#a0a0a0",
+--   bright_orange = "#d6991d",
+--   tint_of_red = "#b7a7b7"
+-- }
+--
+-- palette_overrides["dark0_hard"] = palette_overrides.black1
+-- for k,v in pairs(palette_overrides) do
+--   colors[k] = v
+-- end
+--
+-- -- highlight overrides
+-- local highlight_groups_overrides = {
+--
+--   NormalNC = { fg = colors.dim_light1, bg = colors.dark0_hard },
+--   Search = { fg = colors.mint, bg = colors.bg0 },
+--   IncSearch = { fg = colors.bright_yellow, bg = colors.bg0 },
+--   LineNr = { bg = colors.black1 },
+--   SignColumn = { bg = colors.black2 },
+--   ColorColumn = { bg = colors.black1 },
+--   VertSplit = { fg = colors.black3, bg = colors.bg0 },
+--   Pmenu = { bg = colors.black2},
+--
+--   Function = { link = "GruvboxGreen" }, -- disable bold
+--
+--
+--   -- DiffDelete = { bg = colors.red, fg = colors.black2 },
+--   DiffAdd = { bg = "#414B32" },
+--   DiffDelete = { bg = "#692e26", fg = "#070707" },
+--   DiffChange = { bg = "#414B32" },
+--   DiffText = { bg = "#88a67f", fg = colors.black2 },
+--   -- rgba(46,160,67,0.4)
+--   -- DiffChange = { bg = colors.green, fg = colors.black2 },
+--   -- DiffText = { bg = colors.yellow, fg = colors.black2 },
+--
+--   GitSignsAdd = { fg = "#53654E" },
+--   GitSignsAddNr = { bg = "#53654E", fg = colors.dim_light1 },
+--
+--   GitSignsChange = { fg = "#88a67f" },
+--   GitSignsChangeNr = { bg = "#88a67f", fg = "#3c3836" },
+--
+--   GitSignsDelete = { fg = "#692e26" },
+--   GitSignsDeleteNr = { bg = "#692e26", fg = colors.dim_light1 },
+--
+--   WasBoxPurpleSign = { fg = colors.bright_purple },
+--   GitSignsUntracked = { link = "WasBoxPurpleSign" },
+--   GitSignsUntrackedNr = { link = "GitSignsUntracked" },
+--   GitSignsUntrackedLn = { bg = colors.bright_purple },
+--
+--   WasBoxOrangeSign = { fg = "#8b7e57" },
+--   GitSignsChangeDelete = { link = "WasBoxOrangeSign" },
+--   GitSignsChangeDeleteNr = { bg = "#8b7e57", fg = "#3c3836" },
+--   GitSignsChangeDeleteLn = { bg = "#88a67f" },
+--
+--   GitSignsChangeInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--   GitSignsChangeLnInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--   GitSignsChangeLnVirtline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--
+--   -- GitSignsChangeInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--   -- GitSignsChangeLnInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--   -- GitSignsChangeVirtLnInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+--   -- GitSignsChange = { link = "GruvboxYellowSign" },
+-- }
+-- highlight_groups_overrides['@string'] = { fg = colors.tint_of_red }
+-- highlight_groups_overrides['@annotation'] = { link = "Operator" }
+-- highlight_groups_overrides['@namespace'] = { link = "GruvboxFg1" }
+--
+--
+-- local config = {
+--   undercurl = true,
+--   underline = true,
+--   bold = true,
+--   italic = true,
+--   strikethrough = true,
+--   invert_selection = false,
+--   invert_signs = false,
+--   invert_tabline = false,
+--   invert_intend_guides = false,
+--   inverse = true, -- invert background for search, diffs, statuslines and errors
+--   contrast = "hard", -- can be "hard", "soft" or empty string
+--   palette_overrides = colors,
+--   overrides = highlight_groups_overrides,
+--   dim_inactive = true,
+--   transparent_mode = false,
+-- }
+--
+-- return groups.setup(config, colors)
+return {}
