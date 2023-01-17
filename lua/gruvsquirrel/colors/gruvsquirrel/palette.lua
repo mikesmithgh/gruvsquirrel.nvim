@@ -48,8 +48,9 @@ local colors = Color {
   -- orange
   { '#d6991d', c.hammy_0 },
   { '#d79921', c.hammy_1 },
-  { '#b57614', c.hammy_1 },
-  { '#d65d0e', c.hammy_1 },
+  { '#b57614', c.hammy_2 },
+  { '#d65d0e', c.hammy_3 },
+  { '#2b1e06', c.hammy_4 },
 
   -- orange_red
   { '#ffffff', c.conker_0 }, -- placeholder

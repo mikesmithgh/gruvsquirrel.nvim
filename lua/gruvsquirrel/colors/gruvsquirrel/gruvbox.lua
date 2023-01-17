@@ -356,34 +356,34 @@ local groups = {
   -- gitcommitSelectedFile = { link = "GruvboxGreen" },
   -- gitcommitDiscardedFile = { link = "GruvboxRed" },
 
-  -- gitsigns.nvim
-  GitSignsAdd = { fg = "#53654E" },
-  GitSignsAddNr = { bg = "#53654E", fg = "#c7c7c7" },
-
-  GitSignsChange = { fg = "#88a67f" },
-  GitSignsChangeNr = { bg = "#88a67f", fg = "#3c3836" },
-
-  GitSignsDelete = { fg = "#692e26" },
-  GitSignsDeleteNr = { bg = "#692e26", fg = "#c7c7c7" },
-
-  WasBoxPurpleSign = { fg = colors.bright_purple },
-  GitSignsUntracked = { link = "WasBoxPurpleSign" },
-  GitSignsUntrackedNr = { link = "GitSignsUntracked" },
-  GitSignsUntrackedLn = { bg = colors.bright_purple },
-
-  WasBoxOrangeSign = { fg = "#8b7e57" },
-  GitSignsChangeDelete = { link = "WasBoxOrangeSign" },
-  GitSignsChangeDeleteNr = { bg = "#8b7e57", fg = "#3c3836" },
-  GitSignsChangeDeleteLn = { bg = "#88a67f" },
-
-  GitSignsChangeInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  GitSignsChangeLnInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  GitSignsChangeLnVirtline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-
-  -- GitSignsChangeInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- GitSignsChangeLnInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- GitSignsChangeVirtLnInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- GitSignsChange = { link = "GruvboxYellowSign" },
+  -- -- gitsigns.nvim
+  -- GitSignsAdd = { fg = "#53654E" },
+  -- GitSignsAddNr = { bg = "#53654E", fg = "#c7c7c7" },
+  --
+  -- GitSignsChange = { fg = "#88a67f" },
+  -- GitSignsChangeNr = { bg = "#88a67f", fg = "#3c3836" },
+  --
+  -- GitSignsDelete = { fg = "#692e26" },
+  -- GitSignsDeleteNr = { bg = "#692e26", fg = "#c7c7c7" },
+  --
+  -- WasBoxPurpleSign = { fg = colors.bright_purple },
+  -- GitSignsUntracked = { link = "WasBoxPurpleSign" },
+  -- GitSignsUntrackedNr = { link = "GitSignsUntracked" },
+  -- GitSignsUntrackedLn = { bg = colors.bright_purple },
+  --
+  -- WasBoxOrangeSign = { fg = "#8b7e57" },
+  -- GitSignsChangeDelete = { link = "WasBoxOrangeSign" },
+  -- GitSignsChangeDeleteNr = { bg = "#8b7e57", fg = "#3c3836" },
+  -- GitSignsChangeDeleteLn = { bg = "#88a67f" },
+  --
+  -- GitSignsChangeInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  -- GitSignsChangeLnInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  -- GitSignsChangeLnVirtline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  --
+  -- -- GitSignsChangeInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  -- -- GitSignsChangeLnInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  -- -- GitSignsChangeVirtLnInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
+  -- -- GitSignsChange = { link = "GruvboxYellowSign" },
 
   -- nvim-tree
   NvimTreeSymlink = { fg = palette.neutral_aqua },

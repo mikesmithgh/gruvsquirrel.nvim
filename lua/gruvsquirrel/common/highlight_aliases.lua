@@ -31,7 +31,7 @@ return {
   cola_nut         = { fg = c.rocky_4, bg = c.scrat_0 },
   comfrey          = { bg = c.chitter_3, }, -- might need to clear fg
   coriander        = { bg = c.scrat_6, },
-  cumin            = { bg = c.scrat_3, },
+  cumin            = { bg = c.scrat_3, }, -- TODO: duplicate
   dandelion        = { bg = c.scrat_5 },
   dill             = { fg = c.sandy_0, bg = c.scrat_6, bold = true, },
   fennel           = { sp = c.bucky_0, undercurl = true, },
@@ -60,6 +60,19 @@ return {
   nigella          = { strikethrough = true, },
   oregano          = { italic = true, },
   parsley          = { underline = true, },
+  pecan            = { fg = c.doreen_8 },
+  pignoli          = { fg = c.sally_0, bg = c.doreen_8, },
+  pili_nut         = { fg = c.doreen_2, },
+  pine_nut         = { fg = c.rocky_5, },
+  pistachio        = { bg = c.hammy_4, },
+  poppy            = { fg = c.scrat_3, bg = c.rocky_5 },
+  pumpkin          = { fg = c.scrat_3, bg = c.doreen_2 },
+  quandong         = { fg = c.surly_4, },
+  quinoa           = { fg = c.sally_0, bg = c.surly_4, },
+-- rosemary
+-- sage
+-- sesame
+-- sunflower
 }
 
 -- random nuts and seeds
