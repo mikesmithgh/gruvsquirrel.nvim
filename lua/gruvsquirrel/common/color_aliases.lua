@@ -1,3 +1,4 @@
+-- Generic color names allows us to change underlying colors without worrying about variable names
 local Set = require("gruvsquirrel.util.set").Set
 local base_aliases = {
   'andie', -- https://the-nut-job.fandom.com/wiki/Andie

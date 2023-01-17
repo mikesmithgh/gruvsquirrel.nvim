@@ -1,13 +1,14 @@
-local c = require("gruvsquirrel.colors.gruvsquirrel.palette") -- colors
+local d = require("gruvsquirrel.common.highlight_aliases") -- highlight definitions
 local g = require("gruvsquirrel.highlight-groups.diff") -- groups
 local mapper = require("gruvsquirrel.util.mapper")
 
 local attributes = mapper.highlight_group_mapper {
-  { { g.diffAdded, g.diffFile, g.diffNewFile, }, { fg = c.doreen_0 } },
-  { { g.diffComment, }, { fg = c.rocky_0, italic = true } },
-  { { g.diffChanged, g.diffSubname, g.diffLine, }, { fg = c.skippy_0, } },
+  { { g.diffAdded, g.diffFile, g.diffNewFile, }, d.ginkgo_nut },
+  { { g.diffComment, }, d.hickory_nut },
+  { { g.diffChanged, g.diffSubname, g.diffLine, }, d.indian_nut },
   {
-    { g.diffOnly,
+    {
+      g.diffOnly,
       g.diffIdentical,
       g.diffDiffer,
       g.diffBDiffer,
@@ -16,9 +17,9 @@ local attributes = mapper.highlight_group_mapper {
       g.diffCommon,
       g.diffIndexLine,
     },
-    { fg = c.surly_0, },
+    d.lavender
   },
-  { { g.diffRemoved, g.diffOldFile, }, { fg = c.bucky_2, } },
+  { { g.diffRemoved, g.diffOldFile, }, d.maya_nut },
 }
 
 return attributes

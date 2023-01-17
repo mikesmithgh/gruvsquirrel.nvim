@@ -1,11 +1,11 @@
-local c = require("gruvsquirrel.colors.gruvsquirrel.palette") -- colors
+local d = require("gruvsquirrel.common.highlight_aliases") -- highlight definitions
 local g = require("gruvsquirrel.highlight-groups.gitcommit") -- groups
 local mapper = require("gruvsquirrel.util.mapper")
 
 local attributes = mapper.highlight_group_mapper {
-  { { g.gitcommitHash, }, { fg = c.chitter_0 } },
-  { { g.gitcommitBlank, }, { fg = c.scrat_0, bg = c.bucky_0, bold = true } },
-  { { g.gitcommitHeader, }, { fg = c.doreen_0 } },
+  { { g.gitcommitHash, }, d.basil },
+  { { g.gitcommitBlank, }, d.candlenut },
+  { { g.gitcommitHeader, }, d.ginkgo_nut },
   {
     {
       g.gitcommitDiscardedArrow,
@@ -15,11 +15,11 @@ local attributes = mapper.highlight_group_mapper {
       g.gitcommitOnBranch,
       g.gitcommitComment,
     },
-    { fg = c.rocky_0, italic = true },
+    d.hickory_nut,
   },
-  { { g.gitcommitNoChanges, }, { fg = c.skippy_0, } },
-  { { g.gitcommitNoBranch, }, { fg = c.hammy_0, } },
-  { { g.gitcommitBranch, }, { fg = c.surly_0, } },
+  { { g.gitcommitNoChanges, }, d.indian_nut },
+  { { g.gitcommitNoBranch, }, d.jackfruit_seed },
+  { { g.gitcommitBranch, }, d.lavender },
   {
     {
       g.gitcommitDiscardedType,
@@ -29,9 +29,7 @@ local attributes = mapper.highlight_group_mapper {
       g.gitcommitTrailerToken,
       g.gitcommitSummary,
     },
-    {
-      fg = c.bucky_0
-    }
+    d.lemon_balm
   },
   {
     { g.gitcommitUntrackedFile,
@@ -40,7 +38,7 @@ local attributes = mapper.highlight_group_mapper {
       g.gitcommitSelectedFile,
       g.gitcommitUnmergedFile,
     },
-    { fg = c.chitter_0, underline = true, }
+    d.macadamia_nut
   },
 }
 
