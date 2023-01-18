@@ -8,7 +8,10 @@ return {
   almond           = { bg = c.scrat_1, ctermfg = 'white', }, -- ctermfg is a hack, see https://github.com/neovim/neovim/issues/9800
   amaranth         = { bg = c.scrat_5 },
   anise            = { bg = c.scrat_3, },
+
   basil            = { fg = c.chitter_0 },
+  sesame           = { sp = c.chitter_0, underline = true, },
+
   bay              = { fg = c.scrat_0, bg = c.sandy_0, },
   beechnut         = { reverse = true },
   black_walnut     = { bg = c.doreen_1 },
@@ -39,17 +42,28 @@ return {
   feverfew         = { sp = c.surly_3, undercurl = true, },
   filbert          = { fg = c.sally_0, bg = c.scrat_6, bold = true },
   flax             = { fg = c.rocky_0, bg = c.scrat_5 },
+
   ginkgo_nut       = { fg = c.doreen_0 },
+  tarragon         = { sp = c.doreen_0, underline = true, },
+
   hazelnut         = { fg = c.bucky_0, bold = true },
   hemp             = { fg = c.scrat_6, bg = c.scrat_0 },
   hibiscus         = { fg = c.hammy_0, italic = true },
   hickory_nut      = { fg = c.rocky_0, italic = true },
+
   indian_nut       = { fg = c.skippy_0, },
+  sage             = { sp = c.skippy_0, underline = true, },
+
   jackfruit_seed   = { fg = c.hammy_0, },
   kola_nut         = { fg = c.surly_2, italic = true },
   lavender         = { fg = c.surly_0, },
+
   lemon_balm       = { fg = c.bucky_0 },
+  rosemary         = { sp = c.bucky_0, underline = true, },
+
   lemongrass       = { fg = c.sandy_0, },
+  sunflower         = { sp = c.sandy_0, underline = true, },
+
   peanut           = { fg = c.sally_0, },
   macadamia_nut    = { fg = c.chitter_0, underline = true, },
   malabar_chestnut = { fg = c.sally_2, bold = true, italic = true, },
@@ -69,10 +83,6 @@ return {
   pumpkin          = { fg = c.scrat_3, bg = c.doreen_2 },
   quandong         = { fg = c.surly_4, },
   quinoa           = { fg = c.sally_0, bg = c.surly_4, },
--- rosemary
--- sage
--- sesame
--- sunflower
 }
 
 -- random nuts and seeds

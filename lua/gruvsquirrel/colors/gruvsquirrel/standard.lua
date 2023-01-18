@@ -54,6 +54,16 @@ local attributes = mapper.highlight_group_mapper {
   { { g.Underlined, }, d.macadamia_nut },
   { { g.Todo, }, d.malabar_chestnut },
   { { g.Done, }, d.marjoram },
+  { { g.DiagnosticError, g.DiagnosticFloatingError, g.DiagnosticVirtualTextError, g.DiagnosticSignError,  }, d.lemon_balm },
+  { { g.DiagnosticHint, g.DiagnosticFloatingHint, g.DiagnosticVirtualTextHint, g.DiagnosticSignHint, }, d.indian_nut },
+  { { g.DiagnosticInfo, g.DiagnosticFloatingInfo, g.DiagnosticVirtualTextInfo, g.DiagnosticSignInfo, }, d.basil },
+  { { g.DiagnosticWarn, g.DiagnosticFloatingWarn, g.DiagnosticVirtualTextWarn, g.DiagnosticSignWarn, }, d.lemongrass },
+  { { g.DiagnosticOk, g.DiagnosticFloatingOk, g.DiagnosticVirtualTextOk, g.DiagnosticSignOk, }, d.ginkgo_nut },
+  { { g.DiagnosticUnderlineError, }, d.rosemary },
+  { { g.DiagnosticUnderlineHint, }, d.sage },
+  { { g.DiagnosticUnderlineInfo, }, d.sesame },
+  { { g.DiagnosticUnderlineWarn, }, d.sunflower },
+  { { g.DiagnosticUnderlineOk, }, d.tarragon },
 }
 
 return attributes
