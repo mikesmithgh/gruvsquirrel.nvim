@@ -388,23 +388,33 @@ local groups = {
   -- -- GitSignsChangeVirtLnInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
   -- -- GitSignsChange = { link = "GruvboxYellowSign" },
 
-  -- nvim-tree
-  NvimTreeSymlink = { fg = palette.neutral_aqua },
-  NvimTreeRootFolder = { fg = palette.neutral_purple, bold = true },
-  NvimTreeFolderIcon = { fg = palette.neutral_blue, bold = true },
-  NvimTreeFileIcon = { fg = palette.light2 },
-  NvimTreeExecFile = { fg = palette.neutral_green, bold = true },
-  NvimTreeOpenedFile = { fg = palette.bright_red, bold = true },
-  NvimTreeSpecialFile = { fg = palette.neutral_yellow, bold = true, underline = true },
-  NvimTreeImageFile = { fg = palette.neutral_purple },
-  NvimTreeIndentMarker = { fg = palette.dark3 },
-  NvimTreeGitDirty = { fg = palette.neutral_yellow },
-  NvimTreeGitStaged = { fg = palette.neutral_yellow },
-  NvimTreeGitMerge = { fg = palette.neutral_purple },
-  NvimTreeGitRenamed = { fg = palette.neutral_purple },
-  NvimTreeGitNew = { fg = palette.neutral_yellow },
-  NvimTreeGitDeleted = { fg = palette.neutral_red },
-  NvimTreeWindowPicker = { bg = palette.faded_aqua },
+  -- nvim-tree TODO: I temporarily hardcoded
+  -- blue_green
+  -- TODO: configure NvimTree coloring, not all is provided here
+  NvimTreeSymlink = { fg = "#9dbad4" },
+  NvimTreeWindowPicker = { bg = "#9dbad4" },
+  -- purple
+  NvimTreeRootFolder = { fg = "#d3869b", bold = true },
+  NvimTreeImageFile = { fg = "#d3869b" },
+  NvimTreeGitMerge = { fg = "#d3869b" },
+  NvimTreeGitRenamed = { fg = "#d3869b" },
+  -- blue
+  NvimTreeFolderIcon = { fg = "#9dbad4", bold = false },
+  NvimTreeFolderName = { fg = "#9dbad4", bold = false },
+  -- white
+  NvimTreeFileIcon = { fg = "#c7c7c7" },
+  -- green
+  NvimTreeExecFile = { fg = "#8faa80", bold = true },
+  -- red
+  NvimTreeOpenedFile = { fg = "#ff6961", bold = true },
+  NvimTreeGitDeleted = { fg = "#ff6961" },
+  -- yellow
+  NvimTreeSpecialFile = { fg = "#dbbc5f", bold = true, underline = true },
+  NvimTreeGitDirty = { fg = "#dbbc5f" },
+  NvimTreeGitStaged = { fg = "#dbbc5f" },
+  NvimTreeGitNew = { fg = "#dbbc5f" },
+  -- gray
+  NvimTreeIndentMarker = { fg = "#665c54" },
 
   -- termdebug
   debugPC = { bg = palette.faded_blue },

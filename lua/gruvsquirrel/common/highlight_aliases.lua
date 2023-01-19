@@ -18,7 +18,7 @@ return {
   borage           = { fg = c.scrat_0, bg = c.surly_4, },
   brazil_nut       = { fg = c.scrat_5, bg = c.doreen_2, },
   butternut        = { fg = c.rocky_1, },
-  calend           = { fg = c.rocky_1, },
+  calend           = { fg = c.rocky_1, }, -- TODO: duplicate
   calendula        = {},
   candlenut        = { fg = c.scrat_0, bg = c.bucky_0, bold = true },
   caraway          = { fg = c.rocky_0, bg = c.scrat_0, italic = true },
@@ -83,6 +83,24 @@ return {
   pumpkin          = { fg = c.scrat_3, bg = c.doreen_2 },
   quandong         = { fg = c.surly_4, },
   quinoa           = { fg = c.sally_0, bg = c.surly_4, },
+  thyme            = { fg = c.doreen_1 },
+  walnut           = { fg = c.doreen_3 },
+  water_chestnut   = { fg = c.doreen_5 },
+
+  pine_cone        = { fg = c.hammy_1, },
+  pineapple        = { fg = c.surly_1, },
+  velma            = { fg = c.sally_1, },
+  dwayne           = { fg = c.rocky_6, },
+  scooby           = { fg = c.chitter_2 },
+  cobb             = { fg = c.scrat_0 },
+  pepsi            = { fg = c.rocky_4 },
+  potato           = { fg = c.chitter_1 },
+  gumbo            = { fg = c.bucky_1 },
+  bell             = { fg = c.hammy_3, },
+  santa            = { fg = c.sally_2, },
+  hippo            = { fg = c.surly_3, },
+  yelp             = { fg = c.hammy_5, },
+  cow_go_moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo = { fg = c.bucky_3 },
 }
 
 -- random nuts and seeds
