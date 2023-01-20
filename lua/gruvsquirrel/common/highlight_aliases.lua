@@ -101,81 +101,15 @@ return {
   hippo            = { fg = c.surly_3, },
   yelp             = { fg = c.hammy_5, },
   cow_go_moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo = { fg = c.bucky_3 },
+
+  chipotle         = { fg = c.doreen_0, bold = true, },
+  mcdonalds        = { bg = c.skippy_0, },
+  veggie           = { fp = c.skippy_0, bold = true, },
+  doink            = { fg = c.surly_0, bold = true, },
+  nacho            = { fg = c.rocky_2, },
+
+  dorito           = { fg = c.chitter_0, bold = true, },
+  soup             = { fg = c.scrat_0, bold = true, },
+  meow             = { fg = c.scrat_0, bold = true, underline = true },
 }
 
--- random nuts and seeds
-
--- acorn
--- ajwain
--- almond
--- amaranth
--- anise
--- basil
--- bay
--- beechnut
--- black_walnut
--- borage
--- brazil_nut
--- butternut
--- calend
--- calendula
--- candlenut
--- caraway
--- cashew
--- celery
--- chamomile
--- chestnut
--- chia
--- chinquapin
--- chufa
--- cilantro
--- coconut
--- cola_nut
--- comfrey
--- coriander
--- cumin
--- dandelion
--- dill
--- fennel
--- fenugreek
--- feverfew
--- filbert
--- flax
--- ginkgo_nut
--- hazelnut
--- hemp
--- hibiscus
--- hickory_nut
--- indian_nut
--- jackfruit_seed
--- kola_nut
--- lavender
--- lemon_balm
--- lemongrass
--- macadamia_nut
--- malabar_chestnut
--- marjoram
--- maya_nut
--- mustard
--- nasturtium
--- nigella
--- oregano
--- parsley
--- peanut
--- pecan
--- pignoli
--- pili_nut
--- pine_nut
--- pistachio
--- poppy
--- pumpkin
--- quandong
--- quinoa
--- rosemary
--- sage
--- sesame
--- sunflower
--- tarragon
--- thyme
--- walnut
--- water_chestnut
