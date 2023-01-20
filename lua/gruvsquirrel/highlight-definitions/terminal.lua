@@ -18,3 +18,4 @@
 --   vim.g.terminal_color_7 = colors.fg4
 --   vim.g.terminal_color_15 = colors.fg1
 -- end
+return {}

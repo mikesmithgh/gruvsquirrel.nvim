@@ -1,4 +1,4 @@
-local c = require("gruvsquirrel.colors.gruvsquirrel.palette") -- colors
+local c = require("gruvsquirrel.colors.gruvsquirrel") -- colors
 
 -- TODO: work in progress
 

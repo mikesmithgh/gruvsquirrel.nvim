@@ -28,11 +28,9 @@ M.setup = function()
 
     vim.g.colors_name = "gruvsquirrel"
 
-    local groups = require("gruvsquirrel.colors.gruvsquirrel")
-    -- print(vim.inspect.inspect(groups))
-
+    local highlight_definitions = require("gruvsquirrel.highlight-definitions")
     -- add highlights
-    for group, options in pairs(groups) do
+    for group, options in pairs(highlight_definitions) do
       vim.api.nvim_set_hl(0, group, options)
     end
   end

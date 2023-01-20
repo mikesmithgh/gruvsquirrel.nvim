@@ -1,5 +1,5 @@
 -- Generic highlight definitions allows us to change underlying definitions without worrying about variable names
-local c = require("gruvsquirrel.colors.gruvsquirrel.palette") -- colors
+local c = require("gruvsquirrel.colors.gruvsquirrel") -- colors
 
 return {
 
