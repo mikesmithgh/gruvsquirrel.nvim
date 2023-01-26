@@ -31,7 +31,18 @@ M.setup = function()
     local highlight_definitions = require("gruvsquirrel.highlight-definitions")
     -- add highlights
     for group, options in pairs(highlight_definitions) do
-      vim.api.nvim_set_hl(0, group, options)
+      local _, err = pcall(vim.api.nvim_set_hl, 0, group, options)
+      if err then
+        local warn_msg = {
+          gruvsquirrel_error = {
+            msg = 'error setting highlight',
+            group = group,
+            options = options,
+            error = err,
+          }
+        }
+        vim.notify(vim.inspect(warn_msg), vim.log.levels.WARN, {})
+      end
     end
   end
 end

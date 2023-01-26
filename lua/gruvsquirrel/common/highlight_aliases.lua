@@ -34,13 +34,14 @@ return {
   cola_nut         = { fg = c.rocky_4, bg = c.scrat_0 },
   comfrey          = { bg = c.chitter_3, }, -- might need to clear fg
   coriander        = { bg = c.scrat_6, },
-  cumin            = { bg = c.scrat_3, }, -- TODO: duplicate
+  cumin            = { bg = c.scrat_3, bold = true, },
   dandelion        = { bg = c.scrat_5 },
   dill             = { fg = c.sandy_0, bg = c.scrat_6, bold = true, },
   fennel           = { sp = c.bucky_0, undercurl = true, },
   fenugreek        = { sp = c.skippy_0, undercurl = true, },
   feverfew         = { sp = c.surly_3, undercurl = true, },
   filbert          = { fg = c.sally_0, bg = c.scrat_6, bold = true },
+  hotdog           = { fg = c.sally_0, bg = c.scrat_6, italic = true },
   flax             = { fg = c.rocky_0, bg = c.scrat_5 },
 
   ginkgo_nut       = { fg = c.doreen_0 },
@@ -67,6 +68,7 @@ return {
   peanut           = { fg = c.sally_0, },
   macadamia_nut    = { fg = c.chitter_0, underline = true, },
   malabar_chestnut = { fg = c.sally_2, bold = true, italic = true, },
+  barbaradoo       = { fg = c.sally_2, bold = true, reverse = true, },
   marjoram         = { fg = c.hammy_0, bold = true, italic = true, },
   maya_nut         = { fg = c.bucky_2 },
   mustard          = { fg = c.doreen_0, italic = true },
@@ -111,5 +113,7 @@ return {
   dorito           = { fg = c.chitter_0, bold = true, },
   soup             = { fg = c.scrat_0, bold = true, },
   meow             = { fg = c.scrat_0, bold = true, underline = true },
+
+  yolo             = { fg = c.hammy_0, bold = true, },
 }
 
