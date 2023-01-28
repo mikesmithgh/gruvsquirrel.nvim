@@ -134,75 +134,6 @@ local groups = {
   GruvboxAquaUnderline = { undercurl = config.undercurl, sp = colors.aqua },
   GruvboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
 
-  -- TODO: see https://github.com/neovim/neovim/blob/master/runtime/doc/lsp.txt
-  -- LspReferenceRead = { link = "GruvboxYellowBold" },
-  -- LspReferenceText = { link = "GruvboxYellowBold" },
-  -- LspReferenceWrite = { link = "GruvboxOrangeBold" },
-  -- LspCodeLens = { link = "GruvboxGray" },
-
-
-  -- TODO: revisit, see https://github.com/neovim/neovim/blob/e866da12eeae1e5521abd89a94a7f7c9595a75c3/runtime/syntax/gitcommit.vim
-  -- for git commit
-  -- TODO: check syntax files in neovim
-  -- gitcommit
-  -- gitcommitSelectedFile = { link = "GruvboxGreen" },
-  -- gitcommitDiscardedFile = { link = "GruvboxRed" },
-
-  -- -- gitsigns.nvim
-  -- GitSignsAdd = { fg = "#53654E" },
-  -- GitSignsAddNr = { bg = "#53654E", fg = "#c7c7c7" },
-  --
-  -- GitSignsChange = { fg = "#88a67f" },
-  -- GitSignsChangeNr = { bg = "#88a67f", fg = "#3c3836" },
-  --
-  -- GitSignsDelete = { fg = "#692e26" },
-  -- GitSignsDeleteNr = { bg = "#692e26", fg = "#c7c7c7" },
-  --
-  -- WasBoxPurpleSign = { fg = colors.bright_purple },
-  -- GitSignsUntracked = { link = "WasBoxPurpleSign" },
-  -- GitSignsUntrackedNr = { link = "GitSignsUntracked" },
-  -- GitSignsUntrackedLn = { bg = colors.bright_purple },
-  --
-  -- WasBoxOrangeSign = { fg = "#8b7e57" },
-  -- GitSignsChangeDelete = { link = "WasBoxOrangeSign" },
-  -- GitSignsChangeDeleteNr = { bg = "#8b7e57", fg = "#3c3836" },
-  -- GitSignsChangeDeleteLn = { bg = "#88a67f" },
-  --
-  -- GitSignsChangeInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- GitSignsChangeLnInline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- GitSignsChangeLnVirtline = { bg = "#88a67f", fg = "#0d0d0d" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  --
-  -- -- GitSignsChangeInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- -- GitSignsChangeLnInline = { bg = "#88a67f", fg = colors.black2 }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- -- GitSignsChangeVirtLnInline = { link = "DiffText" }, -- TODO https://github.com/lewis6991/gitsigns.nvim/blob/b0d16a6a022454590308550eada8ffb8686335aa/lua/gitsigns/config.lua#L714
-  -- -- GitSignsChange = { link = "GruvboxYellowSign" },
-
-  -- blue_green
-  -- NvimTreeSymlink = { fg = "#9dbad4" },
-  -- NvimTreeWindowPicker = { bg = "#9dbad4" },
-  -- -- purple
-  -- NvimTreeRootFolder = { fg = "#d3869b", bold = true },
-  -- NvimTreeImageFile = { fg = "#d3869b" },
-  -- NvimTreeGitMerge = { fg = "#d3869b" },
-  -- NvimTreeGitRenamed = { fg = "#d3869b" },
-  -- -- blue
-  -- NvimTreeFolderIcon = { fg = "#9dbad4", bold = false },
-  -- NvimTreeFolderName = { fg = "#9dbad4", bold = false },
-  -- -- white
-  -- NvimTreeFileIcon = { fg = "#c7c7c7" },
-  -- -- green
-  -- NvimTreeExecFile = { fg = "#8faa80", bold = true },
-  -- -- red
-  -- NvimTreeOpenedFile = { fg = "#ff6961", bold = true },
-  -- NvimTreeGitDeleted = { fg = "#ff6961" },
-  -- -- yellow
-  -- NvimTreeSpecialFile = { fg = "#dbbc5f", bold = true, underline = true },
-  -- NvimTreeGitDirty = { fg = "#dbbc5f" },
-  -- NvimTreeGitStaged = { fg = "#dbbc5f" },
-  -- NvimTreeGitNew = { fg = "#dbbc5f" },
-  -- -- gray
-  -- NvimTreeIndentMarker = { fg = "#665c54" },
-
   -- termdebug
   debugPC = { bg = palette.faded_blue },
   debugBreakpoint = { link = "GruvboxRedSign" },
@@ -221,17 +152,6 @@ local groups = {
   -- vim-dirvish
   DirvishPathTail = { link = "GruvboxAqua" },
   DirvishArg = { link = "GruvboxYellow" },
-  -- netrw
-  netrwDir = { link = "GruvboxAqua" },
-  netrwClassify = { link = "GruvboxAqua" },
-  netrwLink = { link = "GruvboxGray" },
-  netrwSymLink = { link = "GruvboxFg1" },
-  netrwExe = { link = "GruvboxYellow" },
-  netrwComment = { link = "GruvboxGray" },
-  netrwList = { link = "GruvboxBlue" },
-  netrwHelpCmd = { link = "GruvboxAqua" },
-  netrwCmdSep = { link = "GruvboxFg3" },
-  netrwVersion = { link = "GruvboxGreen" },
   -- nerdtree
   NERDTreeDir = { link = "GruvboxAqua" },
   NERDTreeDirSlash = { link = "GruvboxAqua" },

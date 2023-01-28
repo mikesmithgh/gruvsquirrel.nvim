@@ -8,7 +8,7 @@ colors_metatable.__index = function(_, key)
 end
 
 -- colors in the form name_0 are considered main colors
--- colors are grouped into similar catogizes by name is
+-- colors are grouped into similar categorized by name is
 -- simply used to give a friendly name for a color
 local colors = Color {
 
