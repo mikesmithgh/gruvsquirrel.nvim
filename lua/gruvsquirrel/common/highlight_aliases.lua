@@ -8,6 +8,7 @@ return {
   almond           = { bg = c.scrat_1, ctermfg = 'white', }, -- ctermfg is a hack, see https://github.com/neovim/neovim/issues/9800
   amaranth         = { bg = c.scrat_5 },
   anise            = { bg = c.scrat_3, },
+  dappydoo         = { fg = c.scrat_3, },
 
   basil            = { fg = c.chitter_0 },
   sesame           = { sp = c.chitter_0, underline = true, },
@@ -106,7 +107,7 @@ return {
 
   chipotle         = { fg = c.doreen_0, bold = true, },
   mcdonalds        = { bg = c.skippy_0, },
-  veggie           = { fp = c.skippy_0, bold = true, },
+  veggie           = { fg = c.skippy_0, bold = true, },
   doink            = { fg = c.surly_0, bold = true, },
   nacho            = { fg = c.rocky_2, },
 
