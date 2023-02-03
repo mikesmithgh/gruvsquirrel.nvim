@@ -33,7 +33,7 @@ local attributes = mapper.highlight_group_mapper {
   { { g.PmenuSel, g.QuickFixLine, g.WildMenu, }, d.comfrey },
   { { g.PmenuSbar, g.TabLineFill }, d.coriander },
   { { g.PmenuThumb }, d.anise },
-  { { g.SignColumn, g.CursorLineSign, }, d.dandelion },
+  { { g.SignColumn, g.CursorLineSign, }, d.calendula },
   { { g.SpecialKey }, d.dill },
   { { g.SpellBad }, d.fennel },
   { { g.SpellCap }, d.fenugreek },
