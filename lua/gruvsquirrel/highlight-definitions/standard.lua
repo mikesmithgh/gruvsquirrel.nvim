@@ -4,7 +4,7 @@ local mapper = require("gruvsquirrel.util.mapper")
 
 local attributes = mapper.highlight_group_mapper {
   { { g.ColorColumn, }, d.acorn },
-  { { g.LineNr, g.LineNrAbove, g.LineNrBelow }, d.ajwain },
+  { { g.LineNr, g.LineNrAbove, g.LineNrBelow }, d.chickenbones },
   { { g.CursorLine, }, d.almond },
   { { g.CursorColumn }, d.amaranth },
   { { g.Visual, g.VisualNOS }, d.anise },
@@ -38,8 +38,8 @@ local attributes = mapper.highlight_group_mapper {
   { { g.SpellBad }, d.fennel },
   { { g.SpellCap }, d.fenugreek },
   { { g.SpellRare }, d.feverfew },
-  { { g.StatusLine, g.TabLineSel, g.winbar }, d.filbert },
-  { { g.StatusLineNC, g.tabline, g.winbarnc }, d.flax },
+  { { g.StatusLine, g.TabLineSel, g.WinBar }, d.filbert },
+  { { g.StatusLineNC, g.TabLine, g.WinBarNC }, d.dowatnut },
   { { g.Title, g.Function, }, d.ginkgo_nut },
   { { g.WarningMsg, }, d.hazelnut },
   { { g.WinSeparator, g.VertSplit }, d.hemp },

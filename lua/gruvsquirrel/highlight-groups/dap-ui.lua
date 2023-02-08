@@ -14,6 +14,7 @@ return Set {
   'DapUIFrameName',
   'DapUILineNumber',
   'DapUIModifiedValue',
+  'DapUINormal',
   'DapUIPlayPause',
   'DapUIPlayPauseNC',
   'DapUIRestart',

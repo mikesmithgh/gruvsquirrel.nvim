@@ -5,6 +5,7 @@ return {
 
   acorn            = { bg = c.scrat_0 },
   ajwain           = { fg = c.rocky_3, bg = c.scrat_0 },
+  chickenbones     = { fg = c.rocky_3 },
   almond           = { bg = c.scrat_1, ctermfg = 'white', }, -- ctermfg is a hack, see https://github.com/neovim/neovim/issues/9800
   amaranth         = { bg = c.scrat_5 },
   anise            = { bg = c.scrat_3, },
@@ -30,9 +31,11 @@ return {
   chia             = { fg = c.sandy_0, bold = true },
   chinquapin       = { fg = c.sally_0, bg = c.scrat_5 },
   chufa            = { fg = c.scrat_5, bg = c.scrat_6, },
+  doowhat          = { fg = c.rocky_1, bg = c.scrat_6, },
   cilantro         = { fg = c.sally_0, bg = c.scrat_0, },
   coconut          = { fg = c.sally_0, bg = c.scrat_6, },
   cola_nut         = { fg = c.rocky_4, bg = c.scrat_0 },
+  dowatnut         = { fg = c.rocky_4, bg = c.scrat_6 },
   comfrey          = { bg = c.chitter_3, }, -- might need to clear fg
   coriander        = { bg = c.scrat_6, },
   cumin            = { bg = c.scrat_3, bold = true, },
