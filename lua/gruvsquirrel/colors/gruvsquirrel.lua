@@ -65,7 +65,7 @@ local colors = Color {
   -- red_purple
   { '#ffffff', c.benny_0 }, -- placeholder
 
-  -- purple
+  -- purple (magenta)
   { '#d3869b', c.surly_0 },
   { '#b16286', c.surly_1 },
   { '#b7a7b7', c.surly_2 },
