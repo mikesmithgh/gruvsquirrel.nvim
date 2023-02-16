@@ -1,23 +1,37 @@
--- TODO: check if I want to do this
--- -- neovim terminal mode colors
--- local function set_terminal_colors(colors)
---   vim.g.terminal_color_0 = colors.bg0
---   vim.g.terminal_color_1 = colors.neutral_red
---   vim.g.terminal_color_2 = colors.neutral_green
---   vim.g.terminal_color_3 = colors.neutral_yellow
---   vim.g.terminal_color_4 = colors.neutral_blue
---   vim.g.terminal_color_5 = colors.neutral_purple
---   vim.g.terminal_color_6 = colors.neutral_aqua
---   vim.g.terminal_color_7 = colors.fg4
---   vim.g.terminal_color_8 = colors.gray
---   vim.g.terminal_color_9 = colors.red
---   vim.g.terminal_color_10 = colors.green
---   vim.g.terminal_color_11 = colors.yellow
---   vim.g.terminal_color_12 = colors.blue
---   vim.g.terminal_color_13 = colors.purple
---   vim.g.terminal_color_14 = colors.aqua
---   vim.g.terminal_color_15 = colors.fg1
--- end
-return {}
--- curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash
+-- TODO: make generic if we have multiple themes in future
+local c = require("gruvsquirrel.colors.gruvsquirrel") -- color palette
 
+-- dark (black)
+vim.g.terminal_color_0 = c.scrat_0
+vim.g.terminal_color_8 = c.scrat_6
+
+-- red
+vim.g.terminal_color_1 = c.bucky_0
+vim.g.terminal_color_9 = c.bucky_2
+
+-- green
+vim.g.terminal_color_2 = c.doreen_0
+vim.g.terminal_color10 = c.doreen_8
+
+-- yellow
+vim.g.terminal_color_3 = c.sandy_0
+vim.g.terminal_color11 = c.hammy_0
+
+-- blue
+vim.g.terminal_color_4 = c.chitter_0
+vim.g.terminal_color12 = c.chitter_1
+
+-- purple (magenta)
+vim.g.terminal_color_5 = c.surly_0
+vim.g.terminal_color13 = c.surly_1
+
+-- blue_green (cyan)
+vim.g.terminal_color_6 = c.skippy_0
+vim.g.terminal_color14 = c.skippy_1
+
+-- light (white)
+vim.g.terminal_color_7 = c.sally_0
+vim.g.terminal_color15 = c.surly_2
+
+-- no need to return anything this is not a typical highlight definition, we are setting global options
+return {}

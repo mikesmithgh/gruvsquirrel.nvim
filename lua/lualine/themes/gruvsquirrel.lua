@@ -1,49 +1,34 @@
 local c = require("gruvsquirrel.colors.gruvsquirrel") -- colors
 
--- TODO: work in progress
-
-local colors = {
-  black        = '#282828',
-  white        = '#c7c7c7',
-  red          = '#fb4934',
-  green        = '#ffffff',
-  blue         = '#83a598',
-  yellow       = '#fe8019',
-  gray         = '#a89984',
-  darkgray     = '#3c3836',
-  lightgray    = '#504945',
-  inactivegray = '#7c6f64',
-}
-
 return {
   normal = {
-    a = { bg = colors.gray, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.lightgray, fg = colors.white },
-    c = { bg = colors.darkgray, fg = colors.gray },
+    a = { bg = c.rocky_6, fg = c.scrat_0, gui = 'bold' },
+    b = { bg = c.scrat_1, fg = c.rocky_4 },
+    c = { bg = c.scrat_6, fg = c.rocky_6 },
   },
   insert = {
-    a = { bg = colors.blue, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.lightgray, fg = colors.white },
-    c = { bg = colors.lightgray, fg = colors.white },
+    a = { bg = c.skippy_0, fg = c.scrat_0, gui = 'bold' },
+    b = { bg = c.scrat_1, fg = c.rocky_4 },
+    c = { bg = c.scrat_6, fg = c.rocky_6 },
   },
   visual = {
-    a = { bg = colors.yellow, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.lightgray, fg = colors.white },
-    c = { bg = colors.inactivegray, fg = colors.black },
+    a = { bg = c.hammy_0, fg = c.scrat_0, gui = 'bold' },
+    b = { bg = c.scrat_1, fg = c.rocky_4 },
+    c = { bg = c.scrat_6, fg = c.rocky_6 },
   },
   replace = {
-    a = { bg = colors.red, fg = colors.black, gui = 'bold' },
-    b = { bg = colors.lightgray, fg = colors.white },
-    c = { bg = colors.black, fg = colors.white },
+    a = { bg = c.bucky_0, fg = c.scrat_0, gui = 'bold' },
+    b = { bg = c.scrat_1, fg = c.rocky_4 },
+    c = { bg = c.scrat_6, fg = c.rocky_6 },
   },
   command = {
-    a = { bg = c['#88a67f'], fg = colors.black, gui = 'bold' },
-    b = { bg = c['#689d6a'], fg = colors.black },
-    c = { bg = c['#414b32'], fg = colors.white },
+    a = { bg = c.doreen_0, fg = c.scrat_0, gui = 'bold' },
+    b = { bg = c.scrat_1, fg = c.rocky_4 },
+    c = { bg = c.scrat_6, fg = c.rocky_6 },
   },
   inactive = {
-    a = { bg = colors.darkgray, fg = colors.gray, gui = 'bold' },
-    b = { bg = colors.darkgray, fg = colors.gray },
-    c = { bg = colors.darkgray, fg = colors.gray },
+    a = { bg = c.scrat_1, fg = c.rocky_4, gui = 'bold,italic' },
+    b = { bg = c.scrat_1, fg = c.rocky_4, gui = 'italic' },
+    c = { bg = c.scrat_6, fg = c.rocky_6, gui = 'italic' },
   },
 }

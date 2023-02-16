@@ -20,6 +20,7 @@ local colors = Color {
   { '#000000', c.scrat_4 },
   { '#0d0d0d', c.scrat_5 },
   { '#1a1a1a', c.scrat_6 },
+  { '#151515', c.scrat_7 },
 
   -- gray
   { '#928374', c.rocky_0 },
@@ -33,10 +34,10 @@ local colors = Color {
   -- light
   { '#c7c7c7', c.sally_0 },
   { '#f9f5d7', c.sally_1 },
-  { '#fbf1c7', c.sally_2 },
-  { '#f2e5bc', c.sally_2 },
-  { '#d5c4a1', c.sally_2 },
-  { '#bdae93', c.sally_2 },
+  -- { '#fbf1c7', c.sally_2 },
+  -- { '#f2e5bc', c.sally_2 },
+  -- { '#d5c4a1', c.sally_2 },
+  -- { '#bdae93', c.sally_2 },
   { '#a89984', c.sally_2 },
 
   -- yellow
@@ -81,8 +82,9 @@ local colors = Color {
   { '#076678', c.chitter_2 },
   { '#282f35', c.chitter_3 },
 
-  -- blue_green
+  -- blue_green (cyan)
   { '#9dbad4', c.skippy_0 },
+  { '#92bbdf', c.skippy_1 },
 
   -- green
   { '#8faa80', c.doreen_0 },
