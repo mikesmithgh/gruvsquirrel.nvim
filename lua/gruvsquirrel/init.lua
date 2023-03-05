@@ -1,4 +1,5 @@
 local config = require("gruvsquirrel.config")
+-- local hsluv = require("hsluv")
 
 local M = {}
 
@@ -16,9 +17,7 @@ local function preFlightCheck() -- should this be healthcheck?
 end
 
 M.setup = function()
-
   if preFlightCheck() then
-
     config.setup() -- not currently used
 
     -- TODO: convert to Lua when API is available

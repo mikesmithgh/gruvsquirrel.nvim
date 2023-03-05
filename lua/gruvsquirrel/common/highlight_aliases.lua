@@ -16,8 +16,8 @@ return {
   black_walnut     = { bg = c.doreen_1 },
   borage           = { fg = c.scrat_0, bg = c.surly_4, },
   brazil_nut       = { fg = c.scrat_5, bg = c.doreen_2, },
-  butternut        = { fg = c.rocky_1, },
-  calend           = { fg = c.rocky_1, }, -- TODO: duplicate
+  flip_nut         = { fg = c.doreen_2, reverse = true }, -- reverse is to avoid conflict with cursorline during diff
+  calend           = { fg = c.rocky_1, },
   calendula        = {},
   candlenut        = { fg = c.scrat_0, bg = c.bucky_0, bold = true },
   caraway          = { fg = c.rocky_0, bg = c.scrat_0, italic = true },
@@ -76,6 +76,7 @@ return {
   pili_nut         = { fg = c.doreen_2, },
   pine_nut         = { fg = c.rocky_5, },
   pistachio        = { bg = c.hammy_4, },
+  choppa           = { fg = c.hammy_4, },
   poppy            = { fg = c.scrat_3, bg = c.rocky_5 },
   pumpkin          = { fg = c.scrat_3, bg = c.doreen_2 },
   quandong         = { fg = c.surly_4, },
