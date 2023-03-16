@@ -1,18 +1,18 @@
-<div align="center">
-  <h1>
-    <img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" 
-         alt="gruvsquirrel" 
-         style="width: 10%; border-radius: 2%;" />
-    <br/>
-    gruvsquirrel.nvim
-  </h1>
-</div>
+<img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" alt="gruvsquirrel" style="width: 15%" align="right" />
 
-> First the logo, TODO: everything else
+# gruvsquirrel.nvim
+Neovime colorscheme written in Lua inspired by [gruvbox](https://github.com/morhetz/gruvbox)
 
-:shipit::warning::shipit: This project is still a work in progress and not considered stable :shipit::warning::shipit:
+<!-- panvimdoc-ignore-start -->
 
-### gruvsquirrel (left) vs gruvbox (right)
+[![neovim: nightly](https://img.shields.io/static/v1?style=for-the-badge&label=neovim&message=nightly&logo=neovim&labelColor=282828&logoColor=8faa80&color=414b32)](https://neovim.io/)
+
+<!-- panvimdoc-ignore-end -->
+
+>:shipit::warning::shipit: This project is still a work in progress and not considered stable :shipit::warning::shipit:
+
+## Screenshot
+gruvsquirrel (left) vs gruvbox (right)
 ![gruvsquirrel-vs-gruvbox](https://user-images.githubusercontent.com/10135646/212453238-9802d1da-46da-4a8e-aee1-7c60941bdc05.png)
 
 
