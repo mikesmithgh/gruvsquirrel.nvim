@@ -1,0 +1,128 @@
+# gruvsquirrel
+
+dodgerblue: &dodgerblue "#9dbad4"
+black: &black "#070707"
+orange: &orange "#d6991d"
+cadetblue: &cadetblue "#8faa80"
+darkslateblue: &darkslateblue "#8faa80"
+white: &white "#c7c7c7"
+fuchsia: &fuchsia "#d3869b"
+aqua: &aqua "#8faa80"
+lightskyblue: &lightskyblue "#9dbad4"
+greenyellow: &greenyellow "#87CEFA"
+orangered: &orangered "#ff6961"
+red: &red "#ff6961"
+darkorange: &darkorange "#9d0006"
+mediumvioletred: &mediumvioletred "#ff6961"
+mediumpurple: &mediumpurple "#8f3f71"
+gray: &gray "#504945"
+lightslategray: &lightslategray "#504945"
+papayawhip: &papayawhip "#b7a7b7"
+limegreen: &limegreen "#8faa80"
+palegreen: &palegreen "#8faa80"
+green: &green "#8faa80"
+blue: &blue "#83a598"
+steelblue: &steelblue "#83a598"
+darkgoldenrod: &darkgoldenrod "#2b1e06"
+seagreen: &seagreen "#8faa80"
+yellow: &yellow "#dbbc5f"
+goldenrod: &goldenrod "#b57614"
+
+k9s:
+  body:
+    fgColor:        *cadetblue
+    bgColor:        *black
+    logoColor:      *orange
+    logoColorMsg:   *white
+    logoColorInfo:  *green
+    logoColorWarn:  *mediumvioletred
+    logoColorError: *red
+  prompt:
+    fgColor: *cadetblue
+    bgColor: *black
+    suggestColor: *dodgerblue
+  info:
+    sectionColor: *white
+    fgColor: *orange
+  dialog:
+    fgColor:            *cadetblue
+    bgColor:            *black
+    buttonBgColor:      *darkslateblue
+    buttonFgColor:      *black
+    buttonFocusBgColor: *dodgerblue
+    buttonFocusFgColor: *black
+    labelFgColor:       *white
+    fieldFgColor:       *white
+  frame:
+    border:
+      fgColor: *dodgerblue
+      focusColor: *lightskyblue
+    menu:
+      fgColor: *white
+      keyColor: *dodgerblue
+      numKeyColor: *fuchsia
+    crumbs:
+      fgColor: *black
+      bgColor: *aqua
+      activeColor: *orange
+    status:
+      newColor: *lightskyblue
+      modifyColor: *greenyellow
+      addColor: *dodgerblue
+      pendingColor: *darkorange
+      errorColor: *orangered
+      highlightColor: *aqua
+      killColor: *mediumpurple
+      completedColor: *lightslategray
+    title:
+      fgColor: *aqua
+      bgColor: *black
+      highlightColor: *fuchsia
+      counterColor: *papayawhip
+      filterColor: *seagreen
+  views:
+    # Charts skins...
+    charts:
+      bgColor: *black
+      dialBgColor: *black
+      chartBgColor: *black
+      defaultDialColors:
+        - *palegreen
+        - *orangered
+      defaultChartColors:
+        - *palegreen
+        - *orangered
+      resourceColors:
+        cpu:
+          - *dodgerblue
+          - *darkslateblue
+        mem:
+          - *yellow
+          - *goldenrod
+    table:
+      fgColor: *aqua
+      bgColor: *black
+      cursorFgColor: *black
+      cursorBgColor: *aqua
+      markColor: *palegreen
+      header:
+        fgColor: *white
+        bgColor: *black
+        sorterColor: *aqua
+    xray:
+      fgColor: *aqua
+      bgColor: *black
+      cursorColor: *dodgerblue
+      cursorTextColor: *black
+      graphicColor: *cadetblue
+    yaml:
+      keyColor: *steelblue
+      colonColor: *white
+      valueColor: *papayawhip
+    logs:
+      fgColor: *lightskyblue
+      bgColor: *black
+      indicator:
+        fgColor: *dodgerblue
+        bgColor: *black
+
