@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" alt="gruvsquirrel" style="width: 15%" align="right" />
 
 # gruvsquirrel.nvim
-Neovime colorscheme written in Lua inspired by [gruvbox](https://github.com/morhetz/gruvbox)
+Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhetz/gruvbox)
 
 <!-- panvimdoc-ignore-start -->
 
@@ -11,10 +11,13 @@ Neovime colorscheme written in Lua inspired by [gruvbox](https://github.com/morh
 
 >:shipit::warning::shipit: This project is still a work in progress and not considered stable :shipit::warning::shipit:
 
+<!-- panvimdoc-ignore-start -->
+
 ## Screenshot
 gruvsquirrel (left) vs gruvbox (right)
 ![gruvsquirrel-vs-gruvbox](https://user-images.githubusercontent.com/10135646/212453238-9802d1da-46da-4a8e-aee1-7c60941bdc05.png)
 
+<!-- panvimdoc-ignore-end -->
 
 # Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
