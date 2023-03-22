@@ -15,7 +15,7 @@ red: &red "#ff6961"
 darkorange: &darkorange "#9d0006"
 mediumvioletred: &mediumvioletred "#ff6961"
 mediumpurple: &mediumpurple "#8f3f71"
-gray: &gray "#504945"
+gray: &gray "#928374"
 lightslategray: &lightslategray "#504945"
 papayawhip: &papayawhip "#b7a7b7"
 limegreen: &limegreen "#8faa80"
@@ -32,10 +32,10 @@ k9s:
   body:
     fgColor:        *cadetblue
     bgColor:        *black
-    logoColor:      *orange
+    logoColor:      *blue
     logoColorMsg:   *white
     logoColorInfo:  *green
-    logoColorWarn:  *mediumvioletred
+    logoColorWarn:  *orange
     logoColorError: *red
   prompt:
     fgColor: *cadetblue
@@ -43,7 +43,7 @@ k9s:
     suggestColor: *dodgerblue
   info:
     sectionColor: *white
-    fgColor: *orange
+    fgColor: *blue
   dialog:
     fgColor:            *cadetblue
     bgColor:            *black
@@ -55,8 +55,8 @@ k9s:
     fieldFgColor:       *white
   frame:
     border:
-      fgColor: *dodgerblue
-      focusColor: *lightskyblue
+      fgColor: *lightslategray
+      focusColor: *lightslategray
     menu:
       fgColor: *white
       keyColor: *dodgerblue
@@ -69,11 +69,11 @@ k9s:
       newColor: *lightskyblue
       modifyColor: *greenyellow
       addColor: *dodgerblue
-      pendingColor: *darkorange
+      pendingColor: *orange
       errorColor: *orangered
       highlightColor: *aqua
       killColor: *mediumpurple
-      completedColor: *lightslategray
+      completedColor: *gray
     title:
       fgColor: *aqua
       bgColor: *black
@@ -81,7 +81,6 @@ k9s:
       counterColor: *papayawhip
       filterColor: *seagreen
   views:
-    # Charts skins...
     charts:
       bgColor: *black
       dialBgColor: *black
@@ -117,7 +116,7 @@ k9s:
       graphicColor: *cadetblue
     yaml:
       keyColor: *steelblue
-      colonColor: *white
+      colonColor: *orange
       valueColor: *papayawhip
     logs:
       fgColor: *lightskyblue
@@ -125,4 +124,9 @@ k9s:
       indicator:
         fgColor: *dodgerblue
         bgColor: *black
-
+  help:
+    fgColor: *white
+    bgColor: *black
+    keyColor: *dodgerblue
+    numKeyColor: *fuchsia
+    sectionColor: *blue
