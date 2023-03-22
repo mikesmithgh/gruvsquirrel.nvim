@@ -1,20 +1,17 @@
 name: Release
-
 on:
-  - workflow_dispatch
-  - push:
-     branches:
-       - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 jobs:
   release:
     name: release
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
       issues: write
       pull-requests: write
-
     steps:
       - uses: actions/checkout@v3
         with:
@@ -29,4 +26,3 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GRUVSQUIRREL_CI_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GRUVSQUIRREL_CI_TOKEN }}
-
