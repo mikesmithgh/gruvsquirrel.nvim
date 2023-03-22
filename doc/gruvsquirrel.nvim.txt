@@ -4,7 +4,7 @@
 Table of Contents                        *gruvsquirrel.nvim-table-of-contents*
 
 1. gruvsquirrel.nvim                     |gruvsquirrel.nvim-gruvsquirrel.nvim|
-2. Ackowledgements                         |gruvsquirrel.nvim-ackowledgements|
+  - Ackowledgements      |gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements|
 
 
 
@@ -17,8 +17,7 @@ Neovim colorscheme written in Lua inspired by gruvbox
 
   This project is still a work in progress and not considered stable
 
-==============================================================================
-2. Ackowledgements                         *gruvsquirrel.nvim-ackowledgements*
+ACKOWLEDGEMENTS          *gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements*
 
 
 - gruvbox <https://github.com/morhetz/gruvbox>
