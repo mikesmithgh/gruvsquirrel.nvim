@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" alt="gruvsquirrel" style="width: 15%" align="right" />
 
-# gruvsquirrel.nvim
+# 🐿️ gruvsquirrel.nvim
 Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhetz/gruvbox)
 
 <!-- panvimdoc-ignore-start -->
@@ -14,13 +14,13 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-start -->
 
-## Screenshot
+## 📸 Screenshot
 gruvsquirrel (left) vs gruvbox (right)
 ![gruvsquirrel-vs-gruvbox](https://user-images.githubusercontent.com/10135646/212453238-9802d1da-46da-4a8e-aee1-7c60941bdc05.png)
 
 <!-- panvimdoc-ignore-end -->
 
-# Ackowledgements
+# 🤝 Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
 - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) 
