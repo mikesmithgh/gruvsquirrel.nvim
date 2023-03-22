@@ -19,7 +19,7 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-end -->
 
-# 🤝 Ackowledgements
+## 🤝 Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
 - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) 
