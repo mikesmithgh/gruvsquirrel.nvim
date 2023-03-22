@@ -14,9 +14,8 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-start -->
 
-## 📸 Screenshot
-gruvsquirrel (left) vs gruvbox (right)
-![gruvsquirrel-vs-gruvbox](https://user-images.githubusercontent.com/10135646/212453238-9802d1da-46da-4a8e-aee1-7c60941bdc05.png)
+## 🪩 Gruvsquirrel
+![main](https://raw.githubusercontent.com/wiki/mikesmithgh/gruvsquirrel.nvim/images/main.png)
 
 <!-- panvimdoc-ignore-end -->
 
