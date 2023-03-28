@@ -40,4 +40,9 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
     > Neovim color utils
 - [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate)
     > Colortemplate is a 100% VimScript plugin for Vim 8 or later, which makes it easy to develop color schemes. Its ambitious goal is to become the way to create new color schemes for Vim!
-
+# 
+<!-- panvimdoc-ignore-start -->
+<div align="center">
+    <img src="https://raw.githubusercontent.com/wiki/mikesmithgh/gruvsquirrel.nvim/images/gruvplans.png" alt="gruvplans" />
+</div>
+<!-- panvimdoc-ignore-end -->
