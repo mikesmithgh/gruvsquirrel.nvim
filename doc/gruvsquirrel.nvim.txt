@@ -1,23 +1,13 @@
-*gruvsquirrel.nvim.txt*       For NVIM nightly      Last change: 2023 March 22
+*gruvsquirrel.nvim.txt*       For NVIM nightly      Last change: 2023 March 28
 
 ==============================================================================
 Table of Contents                        *gruvsquirrel.nvim-table-of-contents*
 
-1. gruvsquirrel.nvim                     |gruvsquirrel.nvim-gruvsquirrel.nvim|
-  - Ackowledgements      |gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements|
-
-
-
-==============================================================================
-1. gruvsquirrel.nvim                     *gruvsquirrel.nvim-gruvsquirrel.nvim*
-
-Neovim colorscheme written in Lua inspired by gruvbox
-<https://github.com/morhetz/gruvbox>
-
+  - Ackowledgements                        |gruvsquirrel.nvim-ackowledgements|
 
   This project is still a work in progress and not considered stable
 
-ACKOWLEDGEMENTS          *gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements*
+ACKOWLEDGEMENTS                            *gruvsquirrel.nvim-ackowledgements*
 
 
 - gruvbox <https://github.com/morhetz/gruvbox>
