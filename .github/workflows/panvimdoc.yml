@@ -1,6 +1,8 @@
 name: panvimdoc
 on:
   push:
+    branches:
+      - '**'
     paths: README.md
   workflow_dispatch:
 jobs:
