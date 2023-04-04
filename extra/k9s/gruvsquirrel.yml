@@ -32,7 +32,7 @@ k9s:
   body:
     fgColor:        *cadetblue
     bgColor:        *black
-    logoColor:      *blue
+    logoColor:      *orange
     logoColorMsg:   *white
     logoColorInfo:  *green
     logoColorWarn:  *orange
@@ -124,6 +124,8 @@ k9s:
       indicator:
         fgColor: *dodgerblue
         bgColor: *black
+        toggleOnColor: *green
+        toggleOffColor: *gray
   help:
     fgColor: *white
     bgColor: *black
