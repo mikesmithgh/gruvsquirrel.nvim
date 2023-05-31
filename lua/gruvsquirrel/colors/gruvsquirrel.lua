@@ -23,7 +23,7 @@ local colors = Color {
   { '#151515', c.scrat_7 },
 
   -- gray
-  { '#928374', c.rocky_0 },
+  { '#968c81', c.rocky_0 },
   { '#504945', c.rocky_1 },
   { '#665c54', c.rocky_2 },
   { '#7c6f64', c.rocky_3 },

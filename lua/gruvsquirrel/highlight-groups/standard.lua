@@ -55,7 +55,7 @@ return Set {
   'Exception',
   'Float',
   'FloatBorder',
-  'FloatShadow',
+  'FloatShadow', -- TODO: look into float border highlights
   'FloatShadowThrough',
   'FloatTitle',
   'FoldColumn',
