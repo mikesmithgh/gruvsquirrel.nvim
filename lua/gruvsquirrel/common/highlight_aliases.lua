@@ -110,6 +110,7 @@ return {
   coco_ha_jackfruit_seed = { fg = c.hammy_0, bg = c.scrat_6, },
   coco_ha_quandong       = { fg = c.surly_4, bg = c.scrat_6, },
   coco_ha_dappydoo       = { fg = c.scrat_3, bg = c.scrat_6, },
+  coco_ha_skippy         = { fg = c.skippy_0, bg = c.scrat_6, },
   coco_ha_pepsi          = { fg = c.rocky_4, bg = c.scrat_6, },
   --no edit
   choppa                 = { fg = c.hammy_4, bg = c.scrat_6, },
