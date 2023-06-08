@@ -1,5 +1,5 @@
-local g = require("gruvsquirrel.highlight-groups.fzf-lua") -- groups
-local d = require("gruvsquirrel.common.highlight_aliases") -- highlight definitions
+local g = require("gruvsquirrel.highlight-groups.fzf-lua")
+local d = require("gruvsquirrel.common.highlight_aliases")
 local mapper = require("gruvsquirrel.util.mapper")
 local attributes = mapper.highlight_group_mapper {
   {

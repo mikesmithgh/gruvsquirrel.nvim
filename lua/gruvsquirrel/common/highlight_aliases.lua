@@ -1,6 +1,7 @@
 -- Generic highlight definitions allows us to change underlying definitions without worrying about variable names
-local c = require("gruvsquirrel.colors.gruvsquirrel") -- colors
+local c = require("gruvsquirrel.colors.gruvsquirrel")
 
+---@enum
 return {
   acorn                  = { bg = c.scrat_0 },
   ajwain                 = { fg = c.rocky_3, bg = c.scrat_0 },
@@ -31,7 +32,7 @@ return {
   chinquapin             = { fg = c.sally_0, bg = c.scrat_5 },
   chufa                  = { fg = c.scrat_5, bg = c.scrat_6, },
   doowhat                = { fg = c.rocky_1, bg = c.scrat_6, },
-  whatdoo                = { fg = c.rocky_4, bg = c.rocky_1, bold = true },
+  whatdoo                = { fg = c.scrat_6, bg = c.rocky_1, bold = true },
   cilantro               = { fg = c.sally_0, bg = c.scrat_0, },
   coconut                = { fg = c.sally_0, bg = c.scrat_6, },
   cola_nut               = { fg = c.rocky_4, bg = c.scrat_0 },
