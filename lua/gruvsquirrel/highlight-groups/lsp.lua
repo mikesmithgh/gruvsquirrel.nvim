@@ -1,11 +1,18 @@
 -- See https://github.com/neovim/neovim/blob/master/runtime/doc/lsp.txt
-local Set = require("gruvsquirrel.util.set").Set
+local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
-return Set {
-  'LspCodeLens',
-  'LspCodeLensSeparator',
-  'LspSignatureActiveParameter',
-  'LspReferenceRead',
-  'LspReferenceText',
-  'LspReferenceWrite',
+--- Lsp Highlight Groups
+---@class GruvsquirrelLspGroup
+local M = {
+  LspCodeLens = 'LspCodeLens',
+  LspCodeLensSeparator = 'LspCodeLensSeparator',
+  LspSignatureActiveParameter = 'LspSignatureActiveParameter',
+  LspReferenceRead = 'LspReferenceRead',
+  LspReferenceText = 'LspReferenceText',
+  LspReferenceWrite = 'LspReferenceWrite',
 }
+
+---@type GruvsquirrelLspGroup
+M = with_meta(M)
+
+return M

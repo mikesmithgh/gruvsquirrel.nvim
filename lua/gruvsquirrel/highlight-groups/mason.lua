@@ -1,20 +1,28 @@
-local Set = require("gruvsquirrel.util.set").Set
+local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
-return Set {
-  'MasonLink',
-  'MasonError',
-  'MasonMuted',
-  'MasonHeader',
-  'MasonNormal',
-  'MasonHeading',
-  'MasonWarning',
-  'MasonHighlight',
-  'MasonMutedBlock',
-  'MasonMutedBlockBold',
-  'MasonHighlightBlock',
-  'MasonHighlightBlockBold',
-  'MasonHeaderSecondary',
-  'MasonHighlightSecondary',
-  'MasonHighlightBlockSecondary',
-  'MasonHighlightBlockBoldSecondary',
+
+--- Mason Highlight Groups
+---@class GruvsquirrelMasonGroup
+local M = {
+  MasonLink = 'MasonLink',
+  MasonError = 'MasonError',
+  MasonMuted = 'MasonMuted',
+  MasonHeader = 'MasonHeader',
+  MasonNormal = 'MasonNormal',
+  MasonHeading = 'MasonHeading',
+  MasonWarning = 'MasonWarning',
+  MasonHighlight = 'MasonHighlight',
+  MasonMutedBlock = 'MasonMutedBlock',
+  MasonMutedBlockBold = 'MasonMutedBlockBold',
+  MasonHighlightBlock = 'MasonHighlightBlock',
+  MasonHighlightBlockBold = 'MasonHighlightBlockBold',
+  MasonHeaderSecondary = 'MasonHeaderSecondary',
+  MasonHighlightSecondary = 'MasonHighlightSecondary',
+  MasonHighlightBlockSecondary = 'MasonHighlightBlockSecondary',
+  MasonHighlightBlockBoldSecondary = 'MasonHighlightBlockBoldSecondary',
 }
+
+---@type GruvsquirrelMasonGroup
+M = with_meta(M)
+
+return M

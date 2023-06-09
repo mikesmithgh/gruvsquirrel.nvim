@@ -13,7 +13,7 @@ local attributes = mapper.highlight_group_mapper {
   { { g.MasonHighlightBlockBold },                 d.cumin },
   { { g.MasonError },                              d.hazelnut },
   { { g.MasonNormal },                             d.coconut },
-  { { g.MasonHeading },                            g.nasturtium },
+  { { g.MasonHeading },                            d.nasturtium },
   { { g.MasonMuted },                              d.hickory_nut },
   { { g.MasonWarning, g.MasonHighlightSecondary }, d.jackfruit_seed },
   { { g.MasonHighlightBlockSecondary },            d.jujufruit_seed },

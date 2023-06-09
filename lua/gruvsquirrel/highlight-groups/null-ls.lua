@@ -1,8 +1,15 @@
-local Set = require("gruvsquirrel.util.set").Set
+local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
-return Set {
-  'NullLsInfoTitle',
-  'NullLsInfoBorder',
-  'NullLsInfoHeader',
-  'NullLsInfoSources',
+--- NullLs Highlight Groups
+---@class GruvsquirrelNullLsGroup
+local M = {
+  NullLsInfoTitle = 'NullLsInfoTitle',
+  NullLsInfoBorder = 'NullLsInfoBorder',
+  NullLsInfoHeader = 'NullLsInfoHeader',
+  NullLsInfoSources = 'NullLsInfoSources',
 }
+
+---@type GruvsquirrelNullLsGroup
+M = with_meta(M)
+
+return M
