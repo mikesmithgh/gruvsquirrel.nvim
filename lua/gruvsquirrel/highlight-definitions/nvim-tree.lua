@@ -1,8 +1,7 @@
 local g = require("gruvsquirrel.highlight-groups.nvim-tree") -- groups
-local d = require("gruvsquirrel.common.highlight_aliases") -- highlight definitions
+local d = require("gruvsquirrel.common.highlight_aliases")   -- highlight definitions
 local mapper = require("gruvsquirrel.util.mapper")
 local attributes = mapper.highlight_group_mapper {
-  { { g.GitSignsAdd, },                       d.pecan },
   { { g.NvimTreeBookmark, },                  d.lavender },
   { { g.NvimTreeExecFile, },                  d.chipotle },
   { { g.NvimTreeFileIcon, },                  d.peanut },
@@ -13,15 +12,15 @@ local attributes = mapper.highlight_group_mapper {
   { { g.NvimTreeGitNew, },                    d.lemongrass },
   { { g.NvimTreeGitRenamed, },                d.lavender },
   { { g.NvimTreeGitStaged, },                 d.lemongrass },
-  { { g.NvimTreeImageFil, },                  d.lavender },
-  { { g.NvimTreeIndentMa, },                  d.nacho },
-  { { g.NvimTreeLiveFilt, },                  d.veggie },
+  { { g.NvimTreeImageFile, },                 d.lavender },
+  { { g.NvimTreeIndentMarker, },              d.nacho },
+  { { g.NvimTreeLiveFilterPrefix, },          d.veggie },
   { { g.NvimTreeLiveFilterValue, },           d.nasturtium },
-  { { g.NvimTreeOpenedFi, },                  d.soup },
-  { { g.NvimTreeRootFold, },                  d.doink },
-  { { g.NvimTreeSpecialF, },                  d.meow },
+  { { g.NvimTreeOpenedFile, },                d.soup },
+  { { g.NvimTreeRootFolder, },                d.doink },
+  { { g.NvimTreeSpecialFile, },               d.meow },
   { { g.NvimTreeSymlink, },                   d.indian_nut },
-  { { g.NvimTreeWindowPi, },                  d.mcdonalds },
+  { { g.NvimTreeWindowPicker, },              d.mcdonalds },
   { { g.NvimTreeSignColumn, },                d.peanut },
   { { g.NvimTreeNormal, },                    d.coconut },
   { { g.NvimTreeNormalNC, },                  d.coconut },
@@ -51,7 +50,6 @@ local attributes = mapper.highlight_group_mapper {
   { { g.NvimTreeLspDiagnosticsHint, },        d.indian_nut },
   { { g.NvimTreeLspDiagnosticsInformation, }, d.basil },
   { { g.NvimTreeLspDiagnosticsWarning, },     d.lemongrass },
-  { { g.NvimTreeLspDiagnosticsOk, },          d.ginkgo_nut },
   { { g.NvimTreePopup, },                     d.coconut },
 }
 return attributes

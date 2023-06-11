@@ -46,4 +46,8 @@ M.setup = function()
   end
 end
 
+-- dev stuff
+require("gruvsquirrel.dev")
+
+
 return M

@@ -1,18 +1,25 @@
-local Set = require("gruvsquirrel.util.set").Set
+local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
-return Set {
-        'UndotreeBranch',
-        'UndotreeCurrent',
-        'UndotreeFirstNode',
-        'UndotreeHead',
-        'UndotreeHelp',
-        'UndotreeHelpKey',
-        'UndotreeHelpTitle',
-        'UndotreeNext',
-        'UndotreeNode',
-        'UndotreeNodeCurrent',
-        'UndotreeSavedBig',
-        'UndotreeSavedSmall',
-        'UndotreeSeq',
-        'UndotreeTimeStamp',
-    }
+--- Undotree Highlight Groups
+---@class GruvsquirrelUndotreeGroup
+local M = {
+  UndotreeBranch = 'UndotreeBranch',
+  UndotreeCurrent = 'UndotreeCurrent',
+  UndotreeFirstNode = 'UndotreeFirstNode',
+  UndotreeHead = 'UndotreeHead',
+  UndotreeHelp = 'UndotreeHelp',
+  UndotreeHelpKey = 'UndotreeHelpKey',
+  UndotreeHelpTitle = 'UndotreeHelpTitle',
+  UndotreeNext = 'UndotreeNext',
+  UndotreeNode = 'UndotreeNode',
+  UndotreeNodeCurrent = 'UndotreeNodeCurrent',
+  UndotreeSavedBig = 'UndotreeSavedBig',
+  UndotreeSavedSmall = 'UndotreeSavedSmall',
+  UndotreeSeq = 'UndotreeSeq',
+  UndotreeTimeStamp = 'UndotreeTimeStamp',
+}
+
+---@type GruvsquirrelUndotreeGroup
+M = with_meta(M)
+
+return M

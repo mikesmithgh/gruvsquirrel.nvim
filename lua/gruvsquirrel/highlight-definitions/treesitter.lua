@@ -1,4 +1,4 @@
-local d = require("gruvsquirrel.common.highlight_aliases") -- highlight definitions
+local d = require("gruvsquirrel.common.highlight_aliases")    -- highlight definitions
 local g = require("gruvsquirrel.highlight-groups.treesitter") -- groups
 local mapper = require("gruvsquirrel.util.mapper")
 
@@ -17,7 +17,7 @@ local attributes = mapper.highlight_group_mapper {
     },
     d.basil
   },
-  { { g['@none'], }, d.calendula },
+  { { g['@none'], },        d.calendula },
   { { g['@text.danger'], }, d.candlenut },
   {
     {
@@ -30,9 +30,9 @@ local attributes = mapper.highlight_group_mapper {
     },
     d.ginkgo_nut
   },
-  { { g['@text.warning'], }, d.hazelnut },
+  { { g['@text.warning'], },               d.hazelnut },
   { { g['@annotation'], g['@operator'], }, d.hibiscus },
-  { { g['@comment'], }, d.hickory_nut },
+  { { g['@comment'], },                    d.hickory_nut },
   {
     {
       g['@preproc'],
@@ -67,14 +67,14 @@ local attributes = mapper.highlight_group_mapper {
       g['@variable.builtin'],
       g['@constant.builtin'],
       g['@text.math'],
-      g['text.note'],
+      g['@text.note'],
 
       g['@tag'],
-      g['@tag.delimter'],
+      g['@tag.delimiter'],
     },
     d.jackfruit_seed
   },
-  { { g['@string'], }, d.kola_nut },
+  { { g['@string'], },                           d.kola_nut },
   { { g['@string.regex'], g['@text.literal'], }, d.mustard },
   {
     {
@@ -115,14 +115,14 @@ local attributes = mapper.highlight_group_mapper {
     d.lemongrass
   },
   { { g['@variable'], g['@namespace'], g['@text'], }, d.peanut },
-  { { g['@text.uri'], g['@text.underline'], }, d.macadamia_nut },
-  { { g['@text.todo'], g['@text.todo.unchecked'], }, d.malabar_chestnut },
-  { { g['@text.todo.checked'], }, d.marjoram },
-  { { g['@text.strong'], }, d.nasturtium },
-  { { g['@text.strike'], }, d.nigella },
-  { { g['@text.emphasis'], }, d.oregano },
-  { { g['@text.underline'], }, d.parsley },
-  { { g['@text.diff.delete'], }, d.maya_nut },
+  { { g['@text.uri'], g['@text.underline'], },        d.macadamia_nut },
+  { { g['@text.todo'], g['@text.todo.unchecked'], },  d.malabar_chestnut },
+  { { g['@text.todo.checked'], },                     d.marjoram },
+  { { g['@text.strong'], },                           d.nasturtium },
+  { { g['@text.strike'], },                           d.nigella },
+  { { g['@text.emphasis'], },                         d.oregano },
+  { { g['@text.underline'], },                        d.parsley },
+  { { g['@text.diff.delete'], },                      d.maya_nut },
 }
 
 return attributes
