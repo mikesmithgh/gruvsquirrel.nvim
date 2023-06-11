@@ -32,6 +32,7 @@ return {
   chinquapin             = { fg = c.sally_0, bg = c.scrat_5 },
   chufa                  = { fg = c.scrat_5, bg = c.scrat_6, },
   doowhat                = { fg = c.rocky_1, bg = c.scrat_6, },
+  doowho                 = { fg = c.rocky_1, bg = c.scrat_0, },
   whatdoo                = { fg = c.scrat_6, bg = c.rocky_1, bold = true },
   cilantro               = { fg = c.sally_0, bg = c.scrat_0, },
   coconut                = { fg = c.sally_0, bg = c.scrat_6, },

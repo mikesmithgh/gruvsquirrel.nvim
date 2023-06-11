@@ -2,17 +2,20 @@ local g = require("gruvsquirrel.highlight-groups.fzf-lua")
 local d = require("gruvsquirrel.common.highlight_aliases")
 local mapper = require("gruvsquirrel.util.mapper")
 local attributes = mapper.highlight_group_mapper {
+  { { g.FzfLuaNormal },      d.cilantro },
+
+  { { g.FzfLuaHelpNormal, }, d.coconut },
+
   {
     {
-      g.FzfLuaNormal,
-      g.FzfLuaHelpNormal,
+      g.FzfLuaPreviewBorder,
     },
-    d.coconut
+    d.doowho
   },
   {
     {
-      g.FzfLuaBorder,
       g.FzfLuaHelpBorder,
+      g.FzfLuaBorder,
       g.FzfLuaScrollBorderEmpty,
       g.FzfLuaScrollBorderFull,
     },
