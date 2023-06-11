@@ -124,6 +124,6 @@ return {
   nacho                  = { fg = c.rocky_2, },
   dorito                 = { fg = c.chitter_0, bold = true, },
   soup                   = { fg = c.scrat_0, bold = true, },
-  meow                   = { fg = c.scrat_0, bold = true, underline = true },
+  meow                   = { fg = c.hammy_0, bold = true, underline = true },
   yolo                   = { fg = c.hammy_0, bold = true, },
 }
