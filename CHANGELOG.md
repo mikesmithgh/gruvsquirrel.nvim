@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.0.1...v1.1.0) (2023-06-13)
+
+
+### Features
+
+* add telescope highlights closes [#32](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/32) ([5e66aca](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/5e66acaa04870b5cf01b6623890f328fe76c1472))
+
 ## [1.0.1](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.0.0...v1.0.1) (2023-06-11)
 
 
