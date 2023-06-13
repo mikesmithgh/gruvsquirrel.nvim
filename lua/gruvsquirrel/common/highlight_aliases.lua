@@ -25,6 +25,7 @@ return {
   candlenut              = { fg = c.scrat_0, bg = c.bucky_0, bold = true },
   caraway                = { fg = c.rocky_0, bg = c.scrat_0, italic = true },
   cashew                 = { fg = c.rocky_0, bg = c.scrat_0 },
+  whesha                 = { fg = c.rocky_0 },
   celery                 = { fg = c.scrat_0, bg = c.doreen_7, },
   chamomile              = { fg = c.sandy_0, bg = c.scrat_1 },
   chestnut               = { reverse = true, bold = true },

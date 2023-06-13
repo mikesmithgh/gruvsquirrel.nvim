@@ -47,7 +47,7 @@ local attributes = mapper.highlight_group_mapper {
   { { g.Operator },                                                                                         d.hibiscus },
   { { g.Comment },                                                                                          d.hickory_nut },
   { { g.PreProc, g.Define, g.Macro, g.Include, g.Structure, },                                              d.indian_nut },
-  { { g.Delimiter, g.Debug, g.StorageClass, g.Tag, g.Special, g.SpecialChar, },                             d.jackfruit_seed },
+  { { g.Delimiter, g.Debug, g.StorageClass, g.Tag, g.Special, g.SpecialChar, g.SpecialComment },            d.jackfruit_seed },
   { { g.String },                                                                                           d.kola_nut },
   { { g.Character, g.Boolean, g.Number, g.Float, g.Constant, },                                             d.lavender },
   { { g.Keyword, g.Conditional, g.Repeat, g.Label, g.Exception, },                                          d.lemon_balm },

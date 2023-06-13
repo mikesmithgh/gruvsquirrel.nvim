@@ -17,6 +17,7 @@ local M = {
   FzfLuaScrollFloatFull = 'FzfLuaScrollFloatFull',
   FzfLuaHelpNormal = 'FzfLuaHelpNormal',
   FzfLuaHelpBorder = 'FzfLuaHelpBorder',
+  FzfLuaPreviewNormal = 'FzfLuaPreviewNormal',
   FzfLuaPreviewBorder = 'FzfLuaPreviewBorder',
 }
 
