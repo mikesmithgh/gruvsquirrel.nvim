@@ -1,3 +1,5 @@
+-- diff is the filetype of the window underneath undotree
+
 -- This is a workaround until the following feature is implemented:
 -- https://github.com/mbbill/undotree/issues/149
 local undotree_ns = vim.api.nvim_create_namespace('undotree')

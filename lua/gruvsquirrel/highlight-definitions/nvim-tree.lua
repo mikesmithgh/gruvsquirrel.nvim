@@ -1,5 +1,5 @@
-local g = require("gruvsquirrel.highlight-groups.nvim-tree") -- groups
-local d = require("gruvsquirrel.common.highlight_aliases")   -- highlight definitions
+local g = require("gruvsquirrel.highlight-groups.nvim-tree")
+local d = require("gruvsquirrel.common.highlight_aliases")
 local mapper = require("gruvsquirrel.util.mapper")
 local attributes = mapper.highlight_group_mapper {
   { { g.NvimTreeBookmark, },                  d.lavender },
@@ -24,10 +24,10 @@ local attributes = mapper.highlight_group_mapper {
   { { g.NvimTreeSignColumn, },                d.peanut },
   { { g.NvimTreeNormal, },                    d.coconut },
   { { g.NvimTreeNormalNC, },                  d.coconut },
-  { { g.NvimTreeStatusLine, },                d.filbert },
-  { { g.NvimTreeStatusLineNC, },              d.flax },
-  { { g.NvimTreeVertSplit, },                 d.hemp },
-  { { g.NvimTreeWinSeparator, },              d.hemp },
+  { { g.NvimTreeStatusLine, },                d.yoohoosl },
+  { { g.NvimTreeStatusLineNC, },              d.yoohooslnc },
+  { { g.NvimTreeVertSplit, },                 d.yoohoo },
+  { { g.NvimTreeWinSeparator, },              d.yoohoo },
   { { g.NvimTreeFolderIcon, },                d.indian_nut },
   { { g.NvimTreeOpenedFolderIcon, },          d.indian_nut },
   { { g.NvimTreeClosedFolderIcon, },          d.indian_nut },

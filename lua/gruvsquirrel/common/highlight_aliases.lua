@@ -1,8 +1,9 @@
 -- Generic highlight definitions allows us to change underlying definitions without worrying about variable names
 local c = require("gruvsquirrel.colors.gruvsquirrel")
+local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
----@enum
-return {
+---@class GruvsquirrelHiglightAliases
+local M = {
   acorn                  = { bg = c.scrat_0 },
   ajwain                 = { fg = c.rocky_3, bg = c.scrat_0 },
   chickenbones           = { fg = c.rocky_3 },
@@ -34,6 +35,10 @@ return {
   chufa                  = { fg = c.scrat_5, bg = c.scrat_6, },
   doowhat                = { fg = c.rocky_1, bg = c.scrat_6, },
   doowho                 = { fg = c.rocky_1, bg = c.scrat_0, },
+  yoohoo                 = { fg = c.rocky_1, bg = c.scrat_1, },
+  yoohoosl               = { fg = c.rocky_6, bg = c.scrat_1, },
+  yoohooslnc             = { fg = c.rocky_6, bg = c.scrat_1, italic = true },
+  yoohoonc               = { fg = c.scrat_1, bg = c.rocky_1, reverse = true }, -- reverse to avoid odd issue with usings default fillchars, remove reverse to reproduce issue
   whatdoo                = { fg = c.scrat_6, bg = c.rocky_1, bold = true },
   cilantro               = { fg = c.sally_0, bg = c.scrat_0, },
   coconut                = { fg = c.sally_0, bg = c.scrat_6, },
@@ -54,7 +59,8 @@ return {
   ginkgo_nut             = { fg = c.doreen_0 },
   tarragon               = { sp = c.doreen_0, underline = true, },
   hazelnut               = { fg = c.bucky_0, bold = true },
-  hemp                   = { fg = c.scrat_6, bg = c.scrat_0 },
+  hemp                   = { fg = c.scrat_0, bg = c.rocky_1 },
+  -- hemp2                  = { fg = c.rocky_1, bg = c.scrat_6 },
   hibiscus               = { fg = c.hammy_0, italic = true },
   hickory_nut            = { fg = c.rocky_0, italic = true },
   indian_nut             = { fg = c.skippy_0, },
@@ -112,6 +118,7 @@ return {
   coco_ha_hickory_nut    = { fg = c.rocky_0, italic = true, bg = c.scrat_6, },
   coco_ha_jackfruit_seed = { fg = c.hammy_0, bg = c.scrat_6, },
   coco_ha_quandong       = { fg = c.surly_4, bg = c.scrat_6, },
+  coco_ha_lavender       = { fg = c.surly_0, bg = c.scrat_6, },
   coco_ha_dappydoo       = { fg = c.scrat_3, bg = c.scrat_6, },
   coco_ha_skippy         = { fg = c.skippy_0, bg = c.scrat_6, },
   coco_ha_pepsi          = { fg = c.rocky_4, bg = c.scrat_6, },
@@ -128,3 +135,8 @@ return {
   meow                   = { fg = c.hammy_0, bold = true, underline = true },
   yolo                   = { fg = c.hammy_0, bold = true, },
 }
+
+---@type GruvsquirrelHiglightAliases
+M = with_meta(M)
+
+return M

@@ -1,5 +1,5 @@
-local g = require("gruvsquirrel.highlight-groups.standard") -- groups
-local d = require("gruvsquirrel.common.highlight_aliases")  -- highlight definitions
+local g = require("gruvsquirrel.highlight-groups.standard")
+local d = require("gruvsquirrel.common.highlight_aliases")
 local mapper = require("gruvsquirrel.util.mapper")
 
 local attributes = mapper.highlight_group_mapper {
@@ -37,13 +37,15 @@ local attributes = mapper.highlight_group_mapper {
   { { g.SpellBad },                                                                                         d.fennel },
   { { g.SpellCap },                                                                                         d.fenugreek },
   { { g.SpellRare },                                                                                        d.feverfew },
-  { { g.StatusLine, g.WinBar },                                                                             d.filbert },
-  { { g.StatusLineNC, g.TabLine, g.WinBarNC },                                                              d.dowatnut },
+  { { g.WinBar, g.TabLine },                                                                                d.filbert },
+  { { g.WinBarNC },                                                                                         d.dowatnut },
+  { { g.StatusLine, },                                                                                      d.yoohoosl },
+  { { g.StatusLineNC, },                                                                                    d.yoohooslnc },
   { { g.TabLineSel },                                                                                       d.pepsi },
   { { g.Title, g.Function, },                                                                               d.ginkgo_nut },
   { { g.WarningMsg, },                                                                                      d.jackfruit_seed },
   { { g.Error, g.ErrorMsg, },                                                                               d.hazelnut },
-  { { g.WinSeparator, g.VertSplit },                                                                        d.hemp },
+  { { g.WinSeparator, g.VertSplit },                                                                        d.yoohoo },
   { { g.Operator },                                                                                         d.hibiscus },
   { { g.Comment },                                                                                          d.hickory_nut },
   { { g.PreProc, g.Define, g.Macro, g.Include, g.Structure, },                                              d.indian_nut },
