@@ -29,18 +29,21 @@ local colorize_opts = {
   mode     = 'background', -- Set the display mode.
 }
 
-local exists, colorizer = pcall(require, "colorizer")
-if not exists then
-  return M
+M.setup = function()
+  local exists, colorizer = pcall(require, "colorizer")
+  if not exists then
+    return M
+  end
+
+  vim.api.nvim_create_augroup('GruvsquirrelColorizeCmp', { clear = true })
+  vim.api.nvim_create_autocmd({ 'Filetype' }, {
+    group = 'GruvsquirrelColorizeCmp',
+    pattern = { 'cmp_docs', 'noice' },
+    callback = function(ev)
+      require('colorizer').attach_to_buffer(ev.buf, colorize_opts)
+    end,
+  })
 end
 
-vim.api.nvim_create_augroup('GruvsquirrelColorizeCmp', { clear = true })
-vim.api.nvim_create_autocmd({ 'Filetype' }, {
-  group = 'GruvsquirrelColorizeCmp',
-  pattern = { 'cmp_docs', 'noice' },
-  callback = function(ev)
-    require('colorizer').attach_to_buffer(ev.buf, colorize_opts)
-  end,
-})
-
 return M
+

@@ -30,6 +30,7 @@ local M = {
   scrat_5 = '#0d0d0d',   -- dark
   scrat_6 = '#1a1a1a',   -- dark
   scrat_7 = '#151515',   -- dark
+  scrat_8 = '#1e1e1e',   -- dark
 
   rocky_0 = '#968c81',   -- gray
   rocky_1 = '#504945',   -- gray

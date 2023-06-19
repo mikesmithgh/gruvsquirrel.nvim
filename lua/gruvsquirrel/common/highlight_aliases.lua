@@ -134,6 +134,7 @@ local M = {
   soup                   = { fg = c.scrat_0, bold = true, },
   meow                   = { fg = c.hammy_0, bold = true, underline = true },
   yolo                   = { fg = c.hammy_0, bold = true, },
+  curcol                 = { bg = c.scrat_8 },
 }
 
 ---@type GruvsquirrelHiglightAliases
