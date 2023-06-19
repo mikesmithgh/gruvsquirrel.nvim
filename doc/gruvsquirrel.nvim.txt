@@ -1,4 +1,4 @@
-*gruvsquirrel.nvim.txt*       For NVIM nightly      Last change: 2023 March 28
+*gruvsquirrel.nvim.txt*       For NVIM nightly       Last change: 2023 June 19
 
 ==============================================================================
 Table of Contents                        *gruvsquirrel.nvim-table-of-contents*
@@ -18,7 +18,6 @@ Neovim colorscheme written in Lua inspired by gruvbox
   This project is still a work in progress and not considered stable
 
 ACKOWLEDGEMENTS          *gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements*
-
 
 - gruvbox <https://github.com/morhetz/gruvbox>
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
