@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.1.0...v1.2.0) (2023-06-19)
+
+
+### Features
+
+* add autocommands and float win improvements ([#89](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/89)) ([a3284eb](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/a3284eb4484a82bcb9f01c7e59ed423d5eeb069f))
+
 # [1.1.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.0.1...v1.1.0) (2023-06-13)
 
 
