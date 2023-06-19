@@ -46,8 +46,10 @@ M.setup = function()
   end
 end
 
+require("gruvsquirrel.autocommand").setup()
+-- TODO: add a flag for dev utilities
 -- dev stuff
-require("gruvsquirrel.dev")
+require("gruvsquirrel.dev").setup()
 
 
 return M
