@@ -42,7 +42,7 @@ local attributes = mapper.highlight_group_mapper {
   { { g.StatusLine, },                                                                                      d.yoohoosl },
   { { g.StatusLineNC, },                                                                                    d.yoohooslnc },
   { { g.TabLineSel },                                                                                       d.pepsi },
-  { { g.Title, g.Function, },                                                                               d.ginkgo_nut },
+  { { g.Title, g.Function, g.FloatTitle },                                                                  d.ginkgo_nut },
   { { g.WarningMsg, },                                                                                      d.jackfruit_seed },
   { { g.Error, g.ErrorMsg, },                                                                               d.hazelnut },
   { { g.WinSeparator, g.VertSplit },                                                                        d.yoohoo },
