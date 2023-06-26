@@ -1,7 +1,7 @@
 local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
 --- Alpha Highlight Groups
----@class AlphaGroup
+---@class GruvsquirrelAlphaGroup
 local M = {
   -- highlight groups defined in LazyVim https://www.lazyvim.org/plugins/ui#alpha-nvim
 
@@ -12,7 +12,7 @@ local M = {
   AlphaHeaderLabel = 'AlphaHeaderLabel',
 }
 
----@type AlphaGroup
+---@type GruvsquirrelAlphaGroup
 M = with_meta(M)
 
 return M

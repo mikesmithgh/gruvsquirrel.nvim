@@ -45,10 +45,17 @@ local float_like_filetypes = {
   ['undotree'] = true,
   ['diff'] = true,
   ['neo-tree-popup'] = true,
+  ['spectre_panel'] = true,
+  ['DiffviewFiles'] = true,
+  ['DiffviewFileHistory'] = true,
 }
 
-local treat_as_normal_window = function(w)
-  if vim.fn.getwinvar(w, 'neo_tree_preview') == 1 then
+local normal_like_filetypes = {
+  -- ['TelescopeResults'] = true,
+}
+
+local is_normal_like = function(w, filetype)
+  if vim.fn.getwinvar(w, 'neo_tree_preview') == 1 or normal_like_filetypes[filetype] then
     vim.fn.setwinvar(w, 'gruvsquirrelnotfloatlike', 1)
     return true
   end
@@ -57,12 +64,12 @@ local treat_as_normal_window = function(w)
 end
 
 
-local is_float_like = function(w)
+local is_float_like = function(w, winhl_tbl)
   local winconfig = vim.api.nvim_win_get_config(w)
   local filetype = vim.api.nvim_get_option_value('filetype', { win = w })
 
   local is_float_window = winconfig.relative ~= nil and winconfig.relative ~= ''
-  local treat_as_normal_win = treat_as_normal_window(w)
+  local treat_as_normal_win = is_normal_like(w, filetype)
 
   if is_float_window and winconfig.relative == 'win' then
     -- neotree using nui and nui creates a relative window to act as border behind actual window
@@ -71,9 +78,31 @@ local is_float_like = function(w)
     end
   end
 
+  -- if the winhighlight is set to a group that has the same background as NormalFloat treat it as a float
+  if winhl_tbl.Normal then
+    local target_hl = vim.api.nvim_get_hl(0, { name = winhl_tbl.Normal, link = false })
+    local normal_float_hl = vim.api.nvim_get_hl(0, { name = 'NormalFloat', link = false })
+    if target_hl.bg == normal_float_hl.bg then
+      return true
+    end
+  end
+
   return (is_float_window or float_like_filetypes[filetype]) and not treat_as_normal_win
 end
 
+local keep_normal_highlights = {
+  TelescopePromptBorder = true,
+  TelescopePreviewBorder = true,
+  TelescopeResultsBorder = true,
+  TelescopePreviewNormal = true
+}
+
+local float_normal_hl = function(normal_hl)
+  if keep_normal_highlights[normal_hl] then
+    return normal_hl
+  end
+  return 'NormalFloat'
+end
 
 -- for key, val in pairs(all_options) do if val.global_local == false and val.scope == "win" then result = result .. "|" .. key .. "=" .. tostring(v[key] or "<not set>") end end
 
@@ -82,19 +111,20 @@ local update_float_like_highlights = function()
   for _, w in pairs(wins) do
     local winhighlights = vim.api.nvim_get_option_value('winhighlight', { win = w })
     local winhl_tbl = winhighlight_to_tbl(winhighlights)
-    -- if not winhl_tbl_is_marked(winhl_tbl) then
-    if is_float_like(w) then
-      winhl_tbl.CursorColumn = 'GruvsquirrelCursorColumnFloat'
-      winhl_tbl.Normal = 'NormalFloat'
-      winhl_tbl.NormalFloat = nil
-      winhl_tbl.FloatBorder = nil
-      vim.api.nvim_set_option_value(
-        'winhighlight',
-        tbl_to_winhighlight(mark_winhl_tbl(winhl_tbl)),
-        { win = w }
-      )
+    if not winhl_tbl_is_marked(winhl_tbl) then -- double check this doesn't cause issues
+      if is_float_like(w, winhl_tbl) then
+        winhl_tbl.CursorColumn = 'GruvsquirrelCursorColumnFloat'
+        -- TODO: look into highlights here
+        -- winhl_tbl.Normal = float_normal_hl(winhl_tbl.Normal)
+        -- winhl_tbl.NormalFloat = float_normal_hl(winhl_tbl.Normal)
+        -- winhl_tbl.FloatBorder = float_normal_hl(winhl_tbl.FloatBorder)
+        vim.api.nvim_set_option_value(
+          'winhighlight',
+          tbl_to_winhighlight(mark_winhl_tbl(winhl_tbl)),
+          { win = w }
+        )
+      end
     end
-    -- end
   end
 end
 
@@ -131,16 +161,16 @@ end
 -- end
 
 M.setup = function()
-  vim.api.nvim_create_augroup('GruvsquirrelFloatLikeHighlights', { clear = true })
-  vim.api.nvim_create_autocmd({ 'WinResized' }, {
-    group = 'GruvsquirrelFloatLikeHighlights',
-    pattern = '*',
-    callback = vim.schedule_wrap(update_float_like_highlights),
-  })
-  vim.api.nvim_create_autocmd({ 'WinEnter' }, {
-    group = 'GruvsquirrelFloatLikeHighlights',
-    callback = vim.schedule_wrap(update_float_like_highlights),
-  })
+  -- vim.api.nvim_create_augroup('GruvsquirrelFloatLikeHighlights', { clear = true })
+  -- vim.api.nvim_create_autocmd({ 'WinResized' }, {
+  --   group = 'GruvsquirrelFloatLikeHighlights',
+  --   pattern = '*',
+  --   callback = vim.schedule_wrap(update_float_like_highlights),
+  -- })
+  -- vim.api.nvim_create_autocmd({ 'WinEnter' }, {
+  --   group = 'GruvsquirrelFloatLikeHighlights',
+  --   callback = vim.schedule_wrap(update_float_like_highlights),
+  -- })
   -- vim.api.nvim_create_autocmd({ 'Filetype' }, {
   --   group = 'GruvsquirrelFloatLikeHighlights',
   --   pattern = { 'diff', 'undotree', 'neo-tree-popup' },

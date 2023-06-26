@@ -34,11 +34,14 @@ local M = {
   chinquapin             = { fg = c.sally_0, bg = c.scrat_5 },
   chufa                  = { fg = c.scrat_5, bg = c.scrat_6, },
   doowhat                = { fg = c.rocky_1, bg = c.scrat_6, },
+  doowhatdow             = { bg = c.scrat_4, blend = 70 },
+  invis                  = { bg = c.scrat_4, blend = 100 },
   doowho                 = { fg = c.rocky_1, bg = c.scrat_0, },
   yoohoo                 = { fg = c.rocky_1, bg = c.scrat_1, },
   yoohoosl               = { fg = c.rocky_6, bg = c.scrat_1, },
   yoohooslnc             = { fg = c.rocky_6, bg = c.scrat_1, italic = true },
   yoohoonc               = { fg = c.scrat_1, bg = c.rocky_1, reverse = true }, -- reverse to avoid odd issue with usings default fillchars, remove reverse to reproduce issue
+  onlike                 = { fg = c.scrat_1 },
   whatdoo                = { fg = c.scrat_6, bg = c.rocky_1, bold = true },
   cilantro               = { fg = c.sally_0, bg = c.scrat_0, },
   coconut                = { fg = c.sally_0, bg = c.scrat_6, },
@@ -89,6 +92,7 @@ local M = {
   pili_nut               = { fg = c.doreen_2, },
   pine_nut               = { fg = c.rocky_5, },
   pistachio              = { bg = c.hammy_4, },
+  mustachio              = { fg = c.doreen_0, bg = c.scrat_5, bold = true },
   poppy                  = { fg = c.scrat_3, bg = c.rocky_5 },
   pumpkin                = { fg = c.scrat_3, bg = c.doreen_2 },
   quandong               = { fg = c.surly_4, },
@@ -135,6 +139,7 @@ local M = {
   meow                   = { fg = c.hammy_0, bold = true, underline = true },
   yolo                   = { fg = c.hammy_0, bold = true, },
   curcol                 = { bg = c.scrat_8 },
+  hoiya                  = { fg = c.scrat_8 },
 }
 
 ---@type GruvsquirrelHiglightAliases

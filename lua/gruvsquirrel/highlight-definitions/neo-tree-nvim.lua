@@ -44,7 +44,7 @@ local attributes = mapper.highlight_group_mapper {
   { { g.NeoTreeStatusLineNC, },                                            d.yoohooslnc },
   { { g.NeoTreeVertSplit, },                                               d.yoohoo },
   { { g.NeoTreeWinSeparator, },                                            d.yoohoo },
-  { { g.NeoTreeEndOfBuffer, },                                             d.calend },
+  { { g.NeoTreeEndOfBuffer, },                                             d.onlike },
   { { g.NeoTreeFloatNormal },                                              d.cilantro },
   { { g.NeoTreeFloatTitle },                                               d.whatdoo },
 }
