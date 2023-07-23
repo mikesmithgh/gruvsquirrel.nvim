@@ -15,8 +15,6 @@ tmp_dir="${TEMPDIR}/${plug_name}.tmp"
 tmp_rtp="${tmp_dir}/nvim/site/pack/vendor/start"
 packpath="${tmp_dir}/nvim/site"
 
-mkdir -p "$tmp_rtp"
-
 usage() {
     echo "Usage $0"
 }
@@ -37,13 +35,14 @@ if [ "${1:-}" = "reset" ]; then
     rm -rf ${tmp_dir}
 fi
 
+mkdir -p "$tmp_rtp"
+
 download_plugin "nvim-tree" "nvim-web-devicons"
 download_plugin "ibhagwan" "fzf-lua"
 
 # if exists, link to local folder so we can test local changes
 if [ -d "${plug_dir}" ]; then
     echo "Using local plugin ${plug_name} from '${plug_dir}'"
-    echo ${plug_dir} ${tmp_rtp}
     ln -fs ${plug_dir} ${tmp_rtp}
 else
     download_plugin "mikesmithgh" "$plug_name"

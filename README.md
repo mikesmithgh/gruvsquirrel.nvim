@@ -11,7 +11,8 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-end -->
 
->:shipit::warning::shipit: This project is still a work in progress and not considered stable :shipit::warning::shipit:
+> [!WARNING]\
+> This project is still a work in progress and not considered stable
 
 <!-- panvimdoc-ignore-start -->
 
@@ -20,11 +21,25 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-end -->
 
+## 🏃 Quickstart
+
+To quickly test this plugin without changing your configuration run the command:
+```sh
+sh -c "$(curl -s https://raw.githubusercontent.com/mikesmithgh/gruvsquirrel.nvim/main/scripts/mini.sh)"
+```
+
+> [!NOTE]\
+> It is good practice to first
+> [read the script](https://github.com/mikesmithgh/gruvsquirrel.nvim/blob/main/scripts/mini.sh)
+> before running `sh -c` directly from the web
+
 ## 🤝 Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
 - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) 
     > A port of gruvbox community theme to lua with treesitter support!
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua)
+    > This is my take on the original fzf.vim, written in lua for neovim 0.5, it builds on the elegant nvim-fzf as an async interface to create a performant and lightweight fzf client for neovim that rivals any of the new shiny fuzzy finders for neovim.
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
     > Gruvbox Material is a modified version of Gruvbox, the contrast is adjusted to be softer in order to protect developers' eyes.
 - [vim-gruvbox8](https://github.com/lifepillar/vim-gruvbox8)
