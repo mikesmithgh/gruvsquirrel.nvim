@@ -4,6 +4,7 @@ local with_meta = require("gruvsquirrel.util.tbl").with_meta
 ---@class GruvsquirrelGroup
 local M = {
   GruvsquirrelCursorColumnFloat = 'GruvsquirrelCursorColumnFloat',
+  GruvsquirrelInclinePrefix = 'GruvsquirrelInclinePrefix',
 }
 
 ---@type GruvsquirrelGroup
