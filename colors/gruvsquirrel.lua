@@ -1,1 +1,1 @@
-require("gruvsquirrel").setup()
+require("gruvsquirrel").load('gruvsquirrel')

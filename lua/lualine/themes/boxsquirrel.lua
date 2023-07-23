@@ -1,4 +1,4 @@
-local c = require("gruvsquirrel.colors").get('gruvsquirrel')
+local c = require("gruvsquirrel.colors").get('boxsquirrel')
 
 return {
   normal = {
