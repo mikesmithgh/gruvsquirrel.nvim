@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.2.0...v1.3.0) (2023-07-23)
+
+
+### Features
+
+* add boxsquirrel colorscheme ([#90](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/90)) ([05d87f1](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/05d87f1695c02ca2447057bb6488c0bc7e15379b))
+
 # [1.2.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.1.0...v1.2.0) (2023-06-19)
 
 
