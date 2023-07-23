@@ -11,7 +11,8 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-end -->
 
->:shipit::warning::shipit: This project is still a work in progress and not considered stable :shipit::warning::shipit:
+> [!WARNING]\
+> This project is still a work in progress and not considered stable
 
 <!-- panvimdoc-ignore-start -->
 
@@ -26,7 +27,9 @@ To quickly test this plugin without changing your configuration run the command:
 ```sh
 sh -c "$(curl -s https://raw.githubusercontent.com/mikesmithgh/gruvsquirrel.nvim/main/scripts/mini.sh)"
 ```
-> **Note:** it's good practice to first
+
+> [!NOTE]\
+> It is good practice to first
 > [read the script](https://github.com/mikesmithgh/gruvsquirrel.nvim/blob/main/scripts/mini.sh)
 > before running `sh -c` directly from the web
 
