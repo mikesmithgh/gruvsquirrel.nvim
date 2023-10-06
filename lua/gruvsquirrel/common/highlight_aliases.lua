@@ -3,8 +3,12 @@ local gruvsquirrel_colors = require("gruvsquirrel.colors")
 local with_meta = require("gruvsquirrel.util.tbl").with_meta
 
 local M = {
-  get = function()
-    local c = gruvsquirrel_colors.get()
+  get = function(...)
+    local c = gruvsquirrel_colors.get(...)
+
+    if next(c) == nil then
+      return {}
+    end
 
     ---@class GruvsquirrelHiglightAliases
     local hl_aliases = {
@@ -145,6 +149,7 @@ local M = {
       yolo                   = { fg = c.hammy_0, bold = true, },
       curcol                 = { bg = c.scrat_8 },
       hoiya                  = { fg = c.rocky_4, bg = c.scrat_1 },
+      ace                    = { bg = c.scrat_2, },
     }
 
     ---@type GruvsquirrelHiglightAliases
