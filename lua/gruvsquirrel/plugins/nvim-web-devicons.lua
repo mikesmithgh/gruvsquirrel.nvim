@@ -9,7 +9,7 @@ if not success then
   return {}
 end
 
-local highlight_definitions = require('gruvsquirrel.highlight-definitions.nvim-web-devicons')
+local highlight_definitions = require('gruvsquirrel.highlight-definitions.nvim-web-devicons').attributes()
 local M = {}
 local icons = nil
 local icons_by_filename = nil
@@ -71,21 +71,23 @@ M.icons_by_file_extension = function()
   return icons_by_file_extension
 end
 
-M.overrides = {
-  override_by_filename = M.icons_by_filename(),
-  override_by_extension = M.icons_by_file_extension(),
-}
+M.overrides = function()
+  return {
+    override_by_filename = M.icons_by_filename(),
+    override_by_extension = M.icons_by_file_extension(),
+  }
+end
 
 -- wrapper method for nvim-web-devicons
 -- set highlight overrides but allow user continue providing overrides
 M.setup = function(o)
   local opts = type(o) == 'table' and vim.tbl_extend('force', {}, o) or {}
   opts.override_by_filename = vim.tbl_extend('force',
-    M.overrides.override_by_filename,
+    M.overrides().override_by_filename,
     opts.override_by_filename or {}
   )
   opts.override_by_extension = vim.tbl_extend('force',
-    M.overrides.override_by_extension,
+    M.overrides().override_by_extension,
     opts.override_by_extension or {}
   )
   devicons.setup(opts)

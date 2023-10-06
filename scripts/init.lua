@@ -5,5 +5,8 @@ local packpath = os.getenv("PACKPATH") or tempdir .. "/" .. plugin_name .. ".tmp
 
 vim.cmd("set packpath=" .. packpath)
 vim.o.termguicolors = true
-require "gruvsquirrel".setup()
+require("gruvsquirrel").setup()
 vim.cmd([[colorscheme gruvsquirrel]])
+require('gruvsquirrel.plugins.nvim-web-devicons').setup()
+require('gruvsquirrel.plugins.fzf-lua').setup()
+require('gruvsquirrel.plugins.incline-nvim').setup()

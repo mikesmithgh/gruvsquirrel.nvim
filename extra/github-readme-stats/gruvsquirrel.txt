@@ -1,0 +1,4 @@
+see https://github.com/anuraghazra/github-readme-stats/blob/master/readme.md#customization
+
+&title_color=c7c7c7&text_color=968c81&icon_color=8faa80&border_color=504945&bg_color=070707
+

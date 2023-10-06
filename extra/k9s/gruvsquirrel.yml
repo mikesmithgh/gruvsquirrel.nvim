@@ -9,7 +9,7 @@ white: &white "#c7c7c7"
 fuchsia: &fuchsia "#d3869b"
 aqua: &aqua "#8faa80"
 lightskyblue: &lightskyblue "#9dbad4"
-greenyellow: &greenyellow "#87CEFA"
+greenyellow: &greenyellow "#87cefa"
 orangered: &orangered "#ff6961"
 red: &red "#ff6961"
 darkorange: &darkorange "#9d0006"
@@ -119,7 +119,7 @@ k9s:
       colonColor: *orange
       valueColor: *papayawhip
     logs:
-      fgColor: *lightskyblue
+      fgColor: *white
       bgColor: *black
       indicator:
         fgColor: *dodgerblue
