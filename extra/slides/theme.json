@@ -1,0 +1,111 @@
+{
+  "document": {
+    "block_prefix": "\n",
+    "block_suffix": "\n",
+    "color": "#c7c7c7",
+    "margin": 52
+  },
+  "block_quote": {
+    "indent": 1,
+    "indent_token": "  ",
+    "color": "#968c81"
+  },
+  "paragraph": {},
+  "list": {
+    "level_indent": 2
+  },
+  "heading": {
+    "block_suffix": "\n",
+    "color": "#c7c7c7",
+    "bold": true
+  },
+  "h1": {
+    "prefix": "██ ",
+    "suffix": "",
+    "color": "#8faa80",
+    "bold": true
+  },
+  "h2": {
+    "prefix": "▓▓▓ ",
+    "suffix": "",
+    "color": "#83a598"
+  },
+  "h3": {
+    "prefix": "▒▒▒▒ ",
+    "suffix": "",
+    "color": "#9dbad4"
+  },
+  "h4": {
+    "prefix": "░░░░░ ",
+    "color": "#d3869b"
+  },
+  "h5": {
+    "color": "#8faa80"
+  },
+  "h6": {
+    "color": "#d6991d"
+  },
+  "text": {},
+  "strikethrough": {
+    "crossed_out": true
+  },
+  "emph": {
+    "italic": true
+  },
+  "strong": {
+    "bold": true
+  },
+  "hr": {
+    "color": "#1a1a1a",
+    "format": "\n▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔\n"
+  },
+  "item": {
+    "block_prefix": "• "
+  },
+  "enumeration": {
+    "block_prefix": ". "
+  },
+  "task": {
+    "ticked": "[✓] ",
+    "unticked": "[ ] "
+  },
+  "link": {
+    "color": "#9dbad4",
+    "underline": true
+  },
+  "link_text": {
+    "color": "#9dbad4",
+    "bold": true
+  },
+  "image": {
+    "color": "#d3869b",
+    "underline": true
+  },
+  "image_text": {
+    "color": "#968c81",
+    "format": "Image: {{.text}} →"
+  },
+  "code": {
+    "prefix": " ",
+    "suffix": " ",
+    "color": "#ff6961",
+    "background_color": "#1a1a1a"
+  },
+  "code_block": {
+    "color": "#ff6961",
+    "background_color": "#1a1a1a",
+    "margin": 0
+  },
+  "table": {
+    "center_separator": "┼",
+    "column_separator": "│",
+    "row_separator": "─"
+  },
+  "definition_list": {},
+  "definition_term": {},
+  "definition_description": {
+    "block_prefix": "\n🠶 "
+  },
+  "html_block": {},
+  "html_span": {}
+}
