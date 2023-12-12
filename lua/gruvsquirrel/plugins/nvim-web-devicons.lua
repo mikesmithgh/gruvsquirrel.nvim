@@ -3,21 +3,20 @@
 --     your config here
 --   })
 
-local success, devicons = pcall(require, 'nvim-web-devicons')
+local success, devicons = pcall(require, "nvim-web-devicons")
 if not success then
-  vim.notify('gruvsquirrel.nvim `nvim-web-devicons` was not found', vim.log.levels.ERROR, {})
+  vim.notify("gruvsquirrel.nvim `nvim-web-devicons` was not found", vim.log.levels.ERROR, {})
   return {}
 end
 
-local highlight_definitions = require('gruvsquirrel.highlight-definitions.nvim-web-devicons').attributes()
+local highlight_definitions = require("gruvsquirrel.highlight-definitions.nvim-web-devicons").attributes()
 local M = {}
 local icons = nil
 local icons_by_filename = nil
 local icons_by_file_extension = nil
 
 M.get_icons = function()
-  vim.notify('do not use get_icons() until https://github.com/nvim-tree/nvim-web-devicons/issues/261 is fixed',
-    vim.log.levels.ERROR, {})
+  vim.notify("do not use get_icons() until https://github.com/nvim-tree/nvim-web-devicons/issues/261 is fixed", vim.log.levels.ERROR, {})
   if true then -- TODO: remove this if the above buf is fixed
     return {}
   end
@@ -27,13 +26,13 @@ M.get_icons = function()
 
   local orig_icons = vim.tbl_deep_extend("force", {}, devicons.get_icons())
   icons = vim.tbl_map(function(icon)
-    local hl_def = highlight_definitions['DevIcon' .. icon.name] or {}
+    local hl_def = highlight_definitions["DevIcon" .. icon.name] or {}
     local fg = hl_def.fg or icon.color
     return vim.tbl_extend("force", icon, { color = fg })
   end, orig_icons)
 
   local default_icon = vim.tbl_deep_extend("force", {}, devicons.get_default_icon())
-  local hl_default = highlight_definitions['DevIconDefault'] or {}
+  local hl_default = highlight_definitions["DevIconDefault"] or {}
   default_icon.color = hl_default.fg or default_icon.color
   icons.default_icon = default_icon
 
@@ -45,9 +44,13 @@ M.icons_by_filename = function()
     return icons_by_filename
   end
 
-  local orig_by_filename = vim.tbl_deep_extend("force", {}, require("nvim-web-devicons-light").icons_by_filename)
+  local ok, nvim_web_devicons = pcall(require, "nvim-web-devicons.icons-default")
+  if not ok then -- fallback if using older nvim-web-devicons version see https://github.com/nvim-tree/nvim-web-devicons/commit/3af745113ea537f58c4b1573b64a429fefad9e07
+    nvim_web_devicons = require("nvim-web-devicons-light")
+  end
+  local orig_by_filename = vim.tbl_deep_extend("force", {}, nvim_web_devicons.icons_by_filename)
   icons_by_filename = vim.tbl_map(function(icon)
-    local hl_def = highlight_definitions['DevIcon' .. icon.name] or {}
+    local hl_def = highlight_definitions["DevIcon" .. icon.name] or {}
     local fg = hl_def.fg or icon.color
     return vim.tbl_extend("force", icon, { color = fg })
   end, orig_by_filename)
@@ -60,10 +63,14 @@ M.icons_by_file_extension = function()
     return icons_by_file_extension
   end
 
-  local orig_by_file_extension = vim.tbl_deep_extend("force", {},
-    require("nvim-web-devicons-light").icons_by_file_extension)
+  local ok, nvim_web_devicons = pcall(require, "nvim-web-devicons.icons-default")
+  if not ok then -- fallback if using older nvim-web-devicons version see https://github.com/nvim-tree/nvim-web-devicons/commit/3af745113ea537f58c4b1573b64a429fefad9e07
+    nvim_web_devicons = require("nvim-web-devicons-light")
+  end
+  local orig_by_file_extension = vim.tbl_deep_extend("force", {}, nvim_web_devicons.icons_by_file_extension)
+  -- local orig_by_file_extension = vim.tbl_deep_extend("force", {}, require("nvim-web-devicons-light").icons_by_file_extension)
   icons_by_file_extension = vim.tbl_map(function(icon)
-    local hl_def = highlight_definitions['DevIcon' .. icon.name] or {}
+    local hl_def = highlight_definitions["DevIcon" .. icon.name] or {}
     local fg = hl_def.fg or icon.color
     return vim.tbl_extend("force", icon, { color = fg })
   end, orig_by_file_extension)
@@ -81,15 +88,9 @@ end
 -- wrapper method for nvim-web-devicons
 -- set highlight overrides but allow user continue providing overrides
 M.setup = function(o)
-  local opts = type(o) == 'table' and vim.tbl_extend('force', {}, o) or {}
-  opts.override_by_filename = vim.tbl_extend('force',
-    M.overrides().override_by_filename,
-    opts.override_by_filename or {}
-  )
-  opts.override_by_extension = vim.tbl_extend('force',
-    M.overrides().override_by_extension,
-    opts.override_by_extension or {}
-  )
+  local opts = type(o) == "table" and vim.tbl_extend("force", {}, o) or {}
+  opts.override_by_filename = vim.tbl_extend("force", M.overrides().override_by_filename, opts.override_by_filename or {})
+  opts.override_by_extension = vim.tbl_extend("force", M.overrides().override_by_extension, opts.override_by_extension or {})
   devicons.setup(opts)
 end
 
