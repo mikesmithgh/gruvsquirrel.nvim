@@ -2,7 +2,7 @@ local string_util = require('gruvsquirrel.util.string')
 local M = {}
 
 M.fzf_colors = function(...)
-  local d = require("gruvsquirrel.common.highlight_aliases").get(...)
+  local d = require('gruvsquirrel.common.highlight_aliases').get(...)
   local colors = {
     ['fg'] = 'regular',
     ['preview-fg'] = 'regular',

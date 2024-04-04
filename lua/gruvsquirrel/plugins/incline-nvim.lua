@@ -1,7 +1,7 @@
 local M = {}
 
 local function field_format()
-  local d = require("gruvsquirrel.common.highlight_aliases").get()
+  local d = require('gruvsquirrel.common.highlight_aliases').get()
   return {
     name = {
       guifg = d.hoiya.fg,
@@ -16,7 +16,7 @@ local function field_format()
     blocks = {
       gui = 'bold',
       guifg = d.acorn.bg,
-    }
+    },
   }
 end
 
@@ -24,8 +24,10 @@ local opts_overrides = {}
 
 M.setup = function(o)
   opts_overrides = type(o) == 'table' and vim.tbl_extend('force', {}, o) or {}
-  require('incline').setup(
-    vim.tbl_extend('force', opts_overrides, {
+
+  local opts = {}
+  if vim.g.colors_name:match('.*squirrel$') then
+    opts = vim.tbl_extend('force', opts_overrides, {
       render = function(props)
         local fmt = field_format()
         local start = vim.tbl_extend('force', { '█▓  ' }, fmt.blocks)
@@ -42,12 +44,13 @@ M.setup = function(o)
           local bufname_r = vim.fn.fnamemodify(buffullname, ':r')
           local bufname_e = vim.fn.fnamemodify(buffullname, ':e')
           local base = (bufname_r and bufname_r ~= '') and bufname_r or bufname
-          local ext = (bufname_e and bufname_e ~= '') and bufname_e or vim.fn.fnamemodify(base, ':t')
+          local ext = (bufname_e and bufname_e ~= '') and bufname_e
+            or vim.fn.fnamemodify(base, ':t')
           local ic, hl = nvim_web_devicons.get_icon(base, ext, { default = true })
           devicon = {
             ic,
             ' ',
-            group = hl
+            group = hl,
           }
         end
 
@@ -56,7 +59,7 @@ M.setup = function(o)
 
         -- modified indicator
         local modified_icon = {}
-        if vim.api.nvim_get_option_value('modified', { buf = props.buf, }) then
+        if vim.api.nvim_get_option_value('modified', { buf = props.buf }) then
           modified_icon = vim.tbl_extend('force', { '● ' }, fmt.modified)
           display_bufname.guifg = fmt.modified.guifg
         end
@@ -87,19 +90,16 @@ M.setup = function(o)
           horizontal = 'right',
           vertical = 'top',
         },
-      }
+      },
     })
-  )
-
-  vim.api.nvim_create_autocmd(
-    { 'ColorschemePre' },
-    {
-      group = vim.api.nvim_create_augroup('GruvsquirrelIncline', { clear = true }),
-      callback = function()
-        M.setup(opts_overrides)
-      end,
-    }
-  )
+  end
+  require('incline').setup(opts)
+  vim.api.nvim_create_autocmd({ 'ColorschemePre' }, {
+    group = vim.api.nvim_create_augroup('GruvsquirrelIncline', { clear = true }),
+    callback = function()
+      M.setup(opts_overrides)
+    end,
+  })
 end
 
 return M
