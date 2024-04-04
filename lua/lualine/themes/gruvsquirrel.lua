@@ -2,7 +2,7 @@ local c = require('gruvsquirrel.colors').get('gruvsquirrel')
 
 return {
   normal = {
-    a = { bg = c.rocky_0, fg = c.scrat_0, gui = 'bold' },
+    a = { bg = c.rocky_6, fg = c.scrat_0, gui = 'bold' },
     b = { bg = c.scrat_2, fg = c.rocky_4 },
     c = { bg = c.scrat_6, fg = c.rocky_0 },
   },
