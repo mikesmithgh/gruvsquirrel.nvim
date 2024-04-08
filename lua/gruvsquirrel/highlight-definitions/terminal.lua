@@ -1,10 +1,10 @@
 local M = {
   attributes = function()
-    local c = require("gruvsquirrel.colors").get()
+    local c = require('gruvsquirrel.colors').get()
 
     -- dark (black)
     vim.g.terminal_color_0 = c.scrat_0
-    vim.g.terminal_color_8 = c.scrat_6
+    vim.g.terminal_color_8 = c.rocky_0
 
     -- red
     vim.g.terminal_color_1 = c.bucky_0
@@ -36,6 +36,6 @@ local M = {
 
     -- no need to return anything this is not a typical highlight definition, we are setting global options
     return {}
-  end
+  end,
 }
 return M
