@@ -30,6 +30,7 @@ local M = {
       brazil_nut             = { fg = c.scrat_5, bg = c.doreen_2, },
       flip_nut               = { fg = c.doreen_2, reverse = true }, -- reverse is to avoid conflict with cursorline during diff
       calend                 = { fg = c.rocky_1, },
+      calendteehee           = { fg = c.rocky_1, bg = c.scrat_5, },
       calendula              = {},
       candlenut              = { fg = c.scrat_0, bg = c.bucky_0, bold = true },
       caraway                = { fg = c.rocky_0, bg = c.scrat_0, italic = true },

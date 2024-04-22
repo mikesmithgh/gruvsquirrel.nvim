@@ -18,16 +18,14 @@ colors:
   alt_blue:   "458588"
   alt_purple: "b16286"
   alt_aqua:   "92bbdf"
-  alt_orange: "b57614"
+  alt_orange: "ff6961"
 
 core:
   normal_text:
     foreground: light
-    background: dark
 
   regular_file:
     foreground: light
-    background: dark
 
   reset_to_normal: {}
 
