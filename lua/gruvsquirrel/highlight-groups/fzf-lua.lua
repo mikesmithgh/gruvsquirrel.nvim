@@ -21,6 +21,7 @@ local M = {
   FzfLuaPreviewBorder = 'FzfLuaPreviewBorder',
   FzfLuaBufName = 'FzfLuaBufName',
   FzfLuaPathLineNr = 'FzfLuaPathLineNr',
+  FzfLuaPathColNr = 'FzfLuaPathColNr',
 }
 
 ---@type GruvsquirrelFzfLuaGroup

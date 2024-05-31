@@ -25,6 +25,7 @@ local M = {
       { { g.FzfLuaTitle }, d.whatdoo },
       { { g.FzfLuaBufName }, d.lavender },
       { { g.FzfLuaPathLineNr }, d.ginkgo_nut },
+      { { g.FzfLuaPathColNr }, d.indian_nut },
     })
   end,
 }
