@@ -1,5 +1,5 @@
 --- See https://github.com/ibhagwan/fzf-lua/blob/main/lua/fzf-lua/init.lua
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- FzfLua Highlight Groups
 ---@class GruvsquirrelFzfLuaGroup
@@ -19,6 +19,8 @@ local M = {
   FzfLuaHelpBorder = 'FzfLuaHelpBorder',
   FzfLuaPreviewNormal = 'FzfLuaPreviewNormal',
   FzfLuaPreviewBorder = 'FzfLuaPreviewBorder',
+  FzfLuaBufName = 'FzfLuaBufName',
+  FzfLuaPathLineNr = 'FzfLuaPathLineNr',
 }
 
 ---@type GruvsquirrelFzfLuaGroup

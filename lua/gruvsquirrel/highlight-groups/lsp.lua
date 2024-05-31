@@ -1,5 +1,5 @@
 -- See https://github.com/neovim/neovim/blob/master/runtime/doc/lsp.txt
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Lsp Highlight Groups
 ---@class GruvsquirrelLspGroup
@@ -10,6 +10,7 @@ local M = {
   LspReferenceRead = 'LspReferenceRead',
   LspReferenceText = 'LspReferenceText',
   LspReferenceWrite = 'LspReferenceWrite',
+  LspInlayHint = 'LspInlayHint',
 }
 
 ---@type GruvsquirrelLspGroup
