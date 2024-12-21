@@ -1,5 +1,5 @@
 -- See https://github.com/neovim/neovim/blob/9220755302317e8030c5bbf334357c0d64df9fa4/src/nvim/highlight_group.c
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Standard Highlight Groups
 ---@class GruvsquirrelStandardGroup
@@ -77,6 +77,7 @@ local M = {
   LineNrBelow = 'LineNrBelow',
   Macro = 'Macro',
   MatchParen = 'MatchParen',
+  MatchParenCur = 'MatchParenCur',
   ModeMsg = 'ModeMsg',
   MoreMsg = 'MoreMsg',
   MsgArea = 'MsgArea',
