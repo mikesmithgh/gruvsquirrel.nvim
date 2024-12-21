@@ -33,6 +33,22 @@ sh -c "$(curl -s https://raw.githubusercontent.com/mikesmithgh/gruvsquirrel.nvim
 > [read the script](https://github.com/mikesmithgh/gruvsquirrel.nvim/blob/main/scripts/mini.sh)
 > before running `sh -c` directly from the web
 
+## 📦 Installation
+
+Using [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  'mikesmithgh/gruvsquirrel.nvim',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    -- load colorscheme on startup
+    vim.cmd([[colorscheme gruvsquirrel]])
+  end,
+}
+```
+
 ## 🤝 Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.

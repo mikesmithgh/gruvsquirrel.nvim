@@ -1,10 +1,11 @@
-*gruvsquirrel.nvim.txt*       For NVIM nightly       Last change: 2023 July 23
+*gruvsquirrel.nvim.txt*     For NVIM nightly     Last change: 2024 December 21
 
 ==============================================================================
 Table of Contents                        *gruvsquirrel.nvim-table-of-contents*
 
 1. gruvsquirrel.nvim                     |gruvsquirrel.nvim-gruvsquirrel.nvim|
   - Quickstart                |gruvsquirrel.nvim-gruvsquirrel.nvim-quickstart|
+  - Installation            |gruvsquirrel.nvim-gruvsquirrel.nvim-installation|
   - Ackowledgements      |gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements|
 
 
@@ -31,6 +32,23 @@ command:
   [!NOTE] It is good practice to first read the script
   <https://github.com/mikesmithgh/gruvsquirrel.nvim/blob/main/scripts/mini.sh>
   before running `sh -c` directly from the web
+
+INSTALLATION                *gruvsquirrel.nvim-gruvsquirrel.nvim-installation*
+
+Using lazy.nvim <https://github.com/folke/lazy.nvim>
+
+>lua
+    {
+      'mikesmithgh/gruvsquirrel.nvim',
+      lazy = false,
+      priority = 1000,
+      config = function()
+        -- load colorscheme on startup
+        vim.cmd([[colorscheme gruvsquirrel]])
+      end,
+    }
+<
+
 
 ACKOWLEDGEMENTS          *gruvsquirrel.nvim-gruvsquirrel.nvim-ackowledgements*
 
