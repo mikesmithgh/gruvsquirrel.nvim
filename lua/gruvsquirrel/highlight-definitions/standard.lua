@@ -1,9 +1,9 @@
-local g = require("gruvsquirrel.highlight-groups.standard")
-local mapper = require("gruvsquirrel.util.mapper")
+local g = require('gruvsquirrel.highlight-groups.standard')
+local mapper = require('gruvsquirrel.util.mapper')
 
 local M = {
   attributes = function()
-    local d = require("gruvsquirrel.common.highlight_aliases").get()
+    local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
       { { g.ColorColumn }, d.acorn },
       { { g.LineNr, g.LineNrAbove, g.LineNrBelow }, d.chickenbones },
@@ -24,7 +24,7 @@ local M = {
       { { g.FoldColumn, g.CursorLineFold }, d.cashew },
       { { g.Substitute, g.Search }, d.celery },
       { { g.CursorLineNr }, d.chamomile },
-      { { g.MatchParen }, d.barbaradoo },
+      { { g.MatchParen, g.MatchParenCur }, d.hickory_nut },
       { { g.ModeMsg, g.MoreMsg, g.Question }, d.chia },
       { { g.MsgArea }, d.chinquapin },
       { { g.MsgSeparator }, d.chufa },
@@ -55,7 +55,10 @@ local M = {
       { { g.Operator }, d.hibiscus },
       { { g.Comment }, d.hickory_nut },
       { { g.PreProc, g.Define, g.Macro, g.Include, g.Structure }, d.indian_nut },
-      { { g.Delimiter, g.Debug, g.StorageClass, g.Tag, g.Special, g.SpecialChar, g.SpecialComment }, d.jackfruit_seed },
+      {
+        { g.Delimiter, g.Debug, g.StorageClass, g.Tag, g.Special, g.SpecialChar, g.SpecialComment },
+        d.jackfruit_seed,
+      },
       { { g.String }, d.kola_nut },
       { { g.Character, g.Boolean, g.Number, g.Float, g.Constant }, d.lavender },
       { { g.Keyword, g.Conditional, g.Repeat, g.Label, g.Exception }, d.lemon_balm },
@@ -64,11 +67,46 @@ local M = {
       { { g.Underlined }, d.macadamia_nut },
       { { g.Todo }, d.malabar_chestnut },
       { { g.Done }, d.marjoram },
-      { { g.DiagnosticError, g.DiagnosticFloatingError, g.DiagnosticVirtualTextError, g.DiagnosticSignError }, d.lemon_balm },
-      { { g.DiagnosticHint, g.DiagnosticFloatingHint, g.DiagnosticVirtualTextHint, g.DiagnosticSignHint }, d.indian_nut },
-      { { g.DiagnosticInfo, g.DiagnosticFloatingInfo, g.DiagnosticVirtualTextInfo, g.DiagnosticSignInfo }, d.nacho },
-      { { g.DiagnosticWarn, g.DiagnosticFloatingWarn, g.DiagnosticVirtualTextWarn, g.DiagnosticSignWarn }, d.lemongrass },
-      { { g.DiagnosticOk, g.DiagnosticFloatingOk, g.DiagnosticVirtualTextOk, g.DiagnosticSignOk }, d.peanut },
+      {
+        {
+          g.DiagnosticError,
+          g.DiagnosticFloatingError,
+          g.DiagnosticVirtualTextError,
+          g.DiagnosticSignError,
+        },
+        d.lemon_balm,
+      },
+      {
+        {
+          g.DiagnosticHint,
+          g.DiagnosticFloatingHint,
+          g.DiagnosticVirtualTextHint,
+          g.DiagnosticSignHint,
+        },
+        d.indian_nut,
+      },
+      {
+        {
+          g.DiagnosticInfo,
+          g.DiagnosticFloatingInfo,
+          g.DiagnosticVirtualTextInfo,
+          g.DiagnosticSignInfo,
+        },
+        d.nacho,
+      },
+      {
+        {
+          g.DiagnosticWarn,
+          g.DiagnosticFloatingWarn,
+          g.DiagnosticVirtualTextWarn,
+          g.DiagnosticSignWarn,
+        },
+        d.lemongrass,
+      },
+      {
+        { g.DiagnosticOk, g.DiagnosticFloatingOk, g.DiagnosticVirtualTextOk, g.DiagnosticSignOk },
+        d.peanut,
+      },
       { { g.DiagnosticUnderlineError }, d.rosemary },
       { { g.DiagnosticUnderlineHint }, d.sage },
       { { g.DiagnosticUnderlineInfo }, d.sesame },
