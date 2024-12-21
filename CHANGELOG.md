@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.3.0...v1.4.0) (2024-12-21)
+
+
+### Features
+
+* add MatchParenCur highlight group ([#98](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/98)) ([b5e5258](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/b5e525866952cc48569d0a3e1e9adbd638b7751e))
+
 # [1.3.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.2.0...v1.3.0) (2023-07-23)
 
 
