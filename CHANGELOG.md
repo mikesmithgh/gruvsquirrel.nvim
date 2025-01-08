@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.4.0...v1.5.0) (2025-01-08)
+
+
+### Features
+
+* add DevIconCodespell highlight ([#100](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/100)) ([7fb086c](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/7fb086ca3514e85b973d93be551458d54b8905cb))
+
 # [1.4.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.3.0...v1.4.0) (2024-12-21)
 
 
