@@ -1,5 +1,5 @@
 -- https://github.com/nvim-tree/nvim-web-devicons/blob/master/lua/nvim-web-devicons.lua
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- DevIcon Highlight Groups
 ---@class GruvsquirrelDevIconGroup
@@ -23,6 +23,7 @@ local M = {
   DevIconClojureDart = 'DevIconClojureDart',
   DevIconClojureJS = 'DevIconClojureJS',
   DevIconCobol = 'DevIconCobol',
+  DevIconCodespell = 'DevIconCodespell',
   DevIconCoffee = 'DevIconCoffee',
   DevIconConf = 'DevIconConf',
   DevIconConfigRu = 'DevIconConfigRu',

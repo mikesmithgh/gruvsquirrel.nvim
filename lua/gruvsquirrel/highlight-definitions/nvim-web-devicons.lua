@@ -24,6 +24,7 @@ local M = {
       { { g.DevIconClojureDart },         d.indian_nut },
       { { g.DevIconClojureJS },           d.indian_nut },
       { { g.DevIconCobol },               d.scooby },
+      { { g.DevIconCodespell },           d.walnut },
       { { g.DevIconCoffee },              d.lemongrass },
       { { g.DevIconConf },                d.dwayne },
       { { g.DevIconConfigRu },            d.quandong },
