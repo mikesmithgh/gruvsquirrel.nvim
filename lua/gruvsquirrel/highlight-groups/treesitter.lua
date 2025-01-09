@@ -1,6 +1,6 @@
 -- See https://github.com/nvim-treesitter/nvim-treesitter/commit/42ab95d5e11f247c6f0c8f5181b02e816caa4a4f#commitcomment-87014462
 -- See https://github.com/neovim/neovim/blob/9220755302317e8030c5bbf334357c0d64df9fa4/src/nvim/highlight_group.c
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Treesitter Highlight Groups
 ---@class GruvsquirrelTreesitterGroup

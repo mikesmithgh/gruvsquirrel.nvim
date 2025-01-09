@@ -1,5 +1,5 @@
 -- See https://github.com/neovim/neovim/blob/master/runtime/syntax/diff.vim
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Diff Highlight Groups
 ---@class GruvsquirrelDiffGroup

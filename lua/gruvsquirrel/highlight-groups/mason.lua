@@ -1,5 +1,4 @@
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
-
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Mason Highlight Groups
 ---@class GruvsquirrelMasonGroup

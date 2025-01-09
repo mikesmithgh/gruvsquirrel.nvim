@@ -1,10 +1,10 @@
-local g = require("gruvsquirrel.highlight-groups.treesitter") -- groups
-local mapper = require("gruvsquirrel.util.mapper")
+local g = require('gruvsquirrel.highlight-groups.treesitter') -- groups
+local mapper = require('gruvsquirrel.util.mapper')
 
 local M = {
   attributes = function()
-    local d = require("gruvsquirrel.common.highlight_aliases").get()
-    return mapper.highlight_group_mapper {
+    local d = require('gruvsquirrel.common.highlight_aliases').get()
+    return mapper.highlight_group_mapper({
       {
         {
           g['@decorator'],
@@ -17,10 +17,10 @@ local M = {
           g['@symbol'],
           g['@text.attribute'],
         },
-        d.basil
+        d.basil,
       },
-      { { g['@none'], },        d.calendula },
-      { { g['@text.danger'], }, d.candlenut },
+      { { g['@none'] }, d.calendula },
+      { { g['@text.danger'] }, d.candlenut },
       {
         {
           g['@function'],
@@ -30,11 +30,11 @@ local M = {
           g['@text.title'],
           g['@text.diff.add'],
         },
-        d.ginkgo_nut
+        d.ginkgo_nut,
       },
-      { { g['@text.warning'], },               d.hazelnut },
-      { { g['@annotation'], g['@operator'], }, d.hibiscus },
-      { { g['@comment'], },                    d.hickory_nut },
+      { { g['@text.warning'] }, d.hazelnut },
+      { { g['@annotation'], g['@operator'] }, d.hibiscus },
+      { { g['@comment'] }, d.hickory_nut },
       {
         {
           g['@preproc'],
@@ -48,7 +48,7 @@ local M = {
           g['@text.environment'],
           g['@struct'],
         },
-        d.indian_nut
+        d.indian_nut,
       },
       {
         {
@@ -74,10 +74,10 @@ local M = {
           g['@tag'],
           g['@tag.delimiter'],
         },
-        d.jackfruit_seed
+        d.jackfruit_seed,
       },
-      { { g['@string'], },                           d.kola_nut },
-      { { g['@string.regex'], g['@text.literal'], }, d.mustard },
+      { { g['@string'] }, d.kola_nut },
+      { { g['@string.regex'], g['@text.literal'] }, d.mustard },
       {
         {
           g['@enumMember'],
@@ -86,9 +86,9 @@ local M = {
           g['@number'],
           g['@float'],
           g['@constant'],
-          g['@text.reference']
+          g['@text.reference'],
         },
-        d.lavender
+        d.lavender,
       },
       {
         {
@@ -112,21 +112,20 @@ local M = {
           g['@type.builtin'],
           g['@type.qualifier'],
           g['@text.environment.name'],
-
         },
-        d.lemongrass
+        d.lemongrass,
       },
-      { { g['@variable'], g['@namespace'], g['@text'], }, d.peanut },
-      { { g['@text.uri'], g['@text.underline'], },        d.macadamia_nut },
-      { { g['@text.todo'], g['@text.todo.unchecked'], },  d.malabar_chestnut },
-      { { g['@text.todo.checked'], },                     d.marjoram },
-      { { g['@text.strong'], },                           d.nasturtium },
-      { { g['@text.strike'], },                           d.nigella },
-      { { g['@text.emphasis'], },                         d.oregano },
-      { { g['@text.underline'], },                        d.parsley },
-      { { g['@text.diff.delete'], },                      d.maya_nut },
-    }
-  end
+      { { g['@variable'], g['@namespace'], g['@text'] }, d.peanut },
+      { { g['@text.uri'], g['@text.underline'] }, d.macadamia_nut },
+      { { g['@text.todo'], g['@text.todo.unchecked'] }, d.malabar_chestnut },
+      { { g['@text.todo.checked'] }, d.marjoram },
+      { { g['@text.strong'] }, d.nasturtium },
+      { { g['@text.strike'] }, d.nigella },
+      { { g['@text.emphasis'] }, d.oregano },
+      { { g['@text.underline'] }, d.parsley },
+      { { g['@text.diff.delete'] }, d.maya_nut },
+    })
+  end,
 }
 
 return M

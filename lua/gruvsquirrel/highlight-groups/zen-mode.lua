@@ -1,9 +1,9 @@
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Undotree Highlight Groups
 ---@class GruvsquirrelZenModeGroup
 local M = {
-  ZenBg = "ZenBg",
+  ZenBg = 'ZenBg',
 }
 
 ---@type GruvsquirrelZenModeGroup

@@ -1,5 +1,5 @@
 -- See https://github.com/neovim/neovim/blob/master/runtime/syntax/netrw.vim
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Netrw Highlight Groups
 ---@class GruvsquirrelNetrwGroup

@@ -1,8 +1,8 @@
-local gruvsquirrel_colors = require("gruvsquirrel.colors")
+local gruvsquirrel_colors = require('gruvsquirrel.colors')
 
 local function script_path()
-  local str = debug.getinfo(2, "S").source:sub(2)
-  return str:match("(.*/)") or ''
+  local str = debug.getinfo(2, 'S').source:sub(2)
+  return str:match('(.*/)') or ''
 end
 
 local generate = function(colorscheme, ...)
@@ -24,7 +24,7 @@ local generate = function(colorscheme, ...)
 end
 
 local generate_all = function()
-  local all_colorschemes = vim.fn.getcompletion("*squirrel", "color")
+  local all_colorschemes = vim.fn.getcompletion('*squirrel', 'color')
   for _, colorscheme in pairs(all_colorschemes) do
     local tm_theme = generate(colorscheme)
     local full_path = script_path() .. 'themes/' .. colorscheme .. '.tmTheme'

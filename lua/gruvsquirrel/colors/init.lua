@@ -7,11 +7,7 @@ local default = 'gruvsquirrel'
 -- ---@return GruvsquirrelColors|BoxsquirrelColors
 M.get = function(name)
   if not name or name == '' then
-    name = vim.g.colors_name
-  end
-  if not name then
-    name = default
-    vim.notify_once('gruvsquirrel.nvim: vim.g.colors_name is undefined using ' .. default, vim.log.levels.ERROR, {})
+    name = vim.g.colors_name or default
   end
   local ok, colors = pcall(require, 'gruvsquirrel.colors.' .. name)
   if not ok then

@@ -1,19 +1,19 @@
-local config = require("gruvsquirrel.config")
--- local hsluv = require("hsluv")
+local cache = require('gruvsquirrel.cache')
+local config = require('gruvsquirrel.config')
 
 local M = {}
 
-local function preFlightCheck() -- should this be healthcheck?
+local function pre_flight_check() -- should this be healthcheck?
   if vim.version().minor < 7 then
-    vim.notify_once("gruvsquirrel.nvim: you must use neovim 0.7 or higher")
+    vim.notify_once('gruvsquirrel.nvim: you must use neovim 0.7 or higher')
     return false
   end
   return true
 end
 
-M.setup = function()
-  if preFlightCheck() then
-    config.setup() -- not currently used
+M.setup = function(opts)
+  if pre_flight_check() then
+    config.setup(opts)
   end
 end
 
@@ -21,16 +21,22 @@ M.load = function(colors_name)
   if not colors_name then
     colors_name = 'gruvsquirrel'
   end
-  -- TODO: convert to Lua when API is available
   if vim.g.colors_name then
-    vim.cmd("hi clear")
+    vim.cmd('hi clear')
   end
 
   -- vim.o.background = 'dark' -- TODO: change if I ever add a light variant
   vim.o.termguicolors = true
   vim.g.colors_name = colors_name
 
-  local highlight_definitions = require("gruvsquirrel.highlight-definitions").attributes()
+  local highlight_definitions = config.options.cache and cache.read(colors_name) or nil
+  if not highlight_definitions then
+    highlight_definitions = require('gruvsquirrel.highlight-definitions').attributes()
+    vim.schedule(function()
+      cache.write(colors_name, highlight_definitions)
+    end)
+  end
+
   -- add highlights
   for group, options in pairs(highlight_definitions) do
     local _, err = pcall(vim.api.nvim_set_hl, 0, group, options)
@@ -41,15 +47,18 @@ M.load = function(colors_name)
           group = group,
           options = options,
           error = err,
-        }
+        },
       }
       vim.notify(vim.inspect(warn_msg), vim.log.levels.WARN, {})
     end
   end
+
+  -- add terminal colors
+  require('gruvsquirrel.terminal_colors').setup()
 end
 
-require("gruvsquirrel.autocmd").setup()
+require('gruvsquirrel.autocmd').setup()
 -- TODO: add a flag for dev utilities
 -- dev stuff
-require("gruvsquirrel.dev").setup()
+require('gruvsquirrel.dev').setup()
 return M

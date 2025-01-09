@@ -1,5 +1,5 @@
 -- See https://github.com/rcarriga/nvim-notify/blob/master/lua/notify/config/highlights.lua
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- Notify Highlight Groups
 ---@class GruvsquirrelNotifyGroup

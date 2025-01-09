@@ -5,9 +5,8 @@ Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhe
 
 <!-- panvimdoc-ignore-start -->
 
-[![neovim: nightly](https://img.shields.io/static/v1?style=for-the-badge&label=neovim&message=nightly&logo=neovim&labelColor=282828&logoColor=8faa80&color=414b32)](https://neovim.io/)
-[![last commit](https://img.shields.io/github/last-commit/mikesmithgh/gruvsquirrel.nvim?style=for-the-badge&logo=git&labelColor=282828&logoColor=ff6961&color=ff6961)](https://github.com/mikesmithgh/gruvsquirrel/pulse)
-[![semantic-release: angular](https://img.shields.io/static/v1?style=for-the-badge&label=semantic-release&message=angular&logo=semantic-release&labelColor=282828&logoColor=d8869b&color=8f3f71)](https://github.com/semantic-release/semantic-release)
+[![neovim: v0.9+](https://img.shields.io/static/v1?style=flat-square&label=neovim&message=v0.9%2b&logo=neovim&labelColor=282828&logoColor=8faa80&color=414b32)](https://neovim.io/)
+[![semantic-release: angular](https://img.shields.io/static/v1?style=flat-square&label=semantic-release&message=angular&logo=semantic-release&labelColor=282828&logoColor=d8869b&color=8f3f71)](https://github.com/semantic-release/semantic-release)
 
 <!-- panvimdoc-ignore-end -->
 
@@ -42,18 +41,31 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
   'mikesmithgh/gruvsquirrel.nvim',
   lazy = false,
   priority = 1000,
-  config = function()
-    -- load colorscheme on startup
-    vim.cmd([[colorscheme gruvsquirrel]])
-  end,
+  opts = {},
 }
 ```
+
+## 🚀 Usage
+
+```lua
+vim.cmd.colorscheme('gruvsquirrel')
+```
+
+```vim
+colorscheme gruvsquirrel
+
+" There are also colorschemes for the different styles.
+colorscheme boxsquirrel
+```
+
 
 ## 🤝 Ackowledgements
 - [gruvbox](https://github.com/morhetz/gruvbox) 
     > Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of solarized. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
 - [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim) 
     > A port of gruvbox community theme to lua with treesitter support!
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+    > A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme. Includes extra themes for Kitty, Alacritty, iTerm and Fish.
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua)
     > This is my take on the original fzf.vim, written in lua for neovim 0.5, it builds on the elegant nvim-fzf as an async interface to create a performant and lightweight fzf client for neovim that rivals any of the new shiny fuzzy finders for neovim.
 - [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
@@ -62,8 +74,6 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
     > This is a simplified and optimized* version of Gruvbox that I have developed to address some issues I had with the official color scheme.
 - [gruvbox-flat.nvim](https://github.com/eddyekofo94/gruvbox-flat.nvim)
     > A dark beautiful Neovim theme written in Lua. 
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-    > A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme. Includes extra themes for Kitty, Alacritty, iTerm and Fish.
 - [rose-pine/neovim](https://github.com/rose-pine/neovim)
     > All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 - [vim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)

@@ -1,5 +1,5 @@
 -- See https://github.com/rcarriga/nvim-dap-ui/blob/b80227ea56a48177786904f6322abc8b2dc0bc36/lua/dapui/config/highlights.lua
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- DapUI Highlight Groups
 ---@class GruvsquirrelDapUIGroup

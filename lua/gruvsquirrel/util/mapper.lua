@@ -5,7 +5,7 @@ M.highlight_mapper = function(highlight_groups, highlight_definition, highlight_
   for _, v in ipairs(highlight_groups) do
     result[v] = highlight_definition
   end
-  return vim.tbl_extend("force", highlight_results, result)
+  return vim.tbl_extend('force', highlight_results, result)
 end
 
 M.highlight_group_mapper = function(highlight_group_list)

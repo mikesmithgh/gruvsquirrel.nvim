@@ -1,5 +1,5 @@
 -- See https://github.com/lewis6991/gitsigns.nvim/blob/main/doc/gitsigns.txt
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- GitSigns Highlight Groups
 ---@class GruvsquirrelGitSignsGroup

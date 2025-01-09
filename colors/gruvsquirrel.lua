@@ -1,1 +1,1 @@
-require("gruvsquirrel").load('gruvsquirrel')
+require('gruvsquirrel').load('gruvsquirrel')
