@@ -1,3 +1,5 @@
+-- cache logic "borrowed" from https://github.com/folke/tokyonight.nvim/blob/7bb270adaa7692c2c33befc35f5567fc596a2504/lua/tokyonight/util.lua#L140
+-- thanks folke!
 local M = {}
 
 local uv = vim.uv or vim.loop
