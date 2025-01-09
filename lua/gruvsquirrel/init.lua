@@ -11,9 +11,9 @@ local function pre_flight_check() -- should this be healthcheck?
   return true
 end
 
-M.setup = function()
+M.setup = function(opts)
   if pre_flight_check() then
-    config.setup() -- not currently used
+    config.setup(opts)
   end
 end
 
@@ -52,6 +52,9 @@ M.load = function(colors_name)
       vim.notify(vim.inspect(warn_msg), vim.log.levels.WARN, {})
     end
   end
+
+  -- add terminal colors
+  require('gruvsquirrel.terminal_colors').setup()
 end
 
 require('gruvsquirrel.autocmd').setup()

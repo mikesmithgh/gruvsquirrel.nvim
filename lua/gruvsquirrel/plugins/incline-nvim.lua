@@ -2,22 +2,24 @@ local M = {}
 
 local function field_format()
   local d = require('gruvsquirrel.common.highlight_aliases').get()
-  return {
-    name = {
-      guifg = d.hoiya.fg,
-      guibg = d.hoiya.bg,
-    },
-    num = {
-      guifg = d.whesha.fg,
-    },
-    modified = {
-      guifg = d.jackfruit_seed.fg,
-    },
-    blocks = {
-      gui = 'bold',
-      guifg = d.acorn.bg,
-    },
-  }
+  return next(d)
+      and {
+        name = {
+          guifg = d.hoiya.fg,
+          guibg = d.hoiya.bg,
+        },
+        num = {
+          guifg = d.whesha.fg,
+        },
+        modified = {
+          guifg = d.jackfruit_seed.fg,
+        },
+        blocks = {
+          gui = 'bold',
+          guifg = d.acorn.bg,
+        },
+      }
+    or nil
 end
 
 local opts_overrides = {}
@@ -25,11 +27,11 @@ local opts_overrides = {}
 M.setup = function(o)
   opts_overrides = type(o) == 'table' and vim.tbl_extend('force', {}, o) or {}
 
-  local opts = {}
-  if vim.g.colors_name:match('.*squirrel$') then
+  local opts = { render = 'basic' }
+  local fmt = field_format()
+  if vim.g.colors_name and vim.g.colors_name:match('.*squirrel$') and fmt then
     opts = vim.tbl_extend('force', opts_overrides, {
       render = function(props)
-        local fmt = field_format()
         local start = vim.tbl_extend('force', { '█▓  ' }, fmt.blocks)
         local stop = vim.tbl_extend('force', { ' ▓█' }, fmt.blocks)
         local bufnum = props.buf
@@ -97,7 +99,9 @@ M.setup = function(o)
   vim.api.nvim_create_autocmd({ 'ColorschemePre' }, {
     group = vim.api.nvim_create_augroup('GruvsquirrelIncline', { clear = true }),
     callback = function()
-      M.setup(opts_overrides)
+      vim.schedule(function()
+        M.setup(opts_overrides)
+      end)
     end,
   })
 end

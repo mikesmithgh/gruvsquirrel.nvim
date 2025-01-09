@@ -1,7 +1,6 @@
 local M = {}
 
 local defaults = {
-  style = 'gruvsquirrel',
   cache = true,
 }
 
