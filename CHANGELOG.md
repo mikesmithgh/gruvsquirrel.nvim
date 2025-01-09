@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.5.0...v1.6.0) (2025-01-09)
+
+
+### Features
+
+* add caching to improve startup time ([#101](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/101)) ([ab095bf](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/ab095bf1025245f7873351162e087693de246d7c))
+
 # [1.5.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.4.0...v1.5.0) (2025-01-08)
 
 
