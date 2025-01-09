@@ -3,6 +3,6 @@ local opts = {
   window = {
     documentation = {
       winhighlight = 'FloatBorder:FloatBorder',
-    }
+    },
   },
 }

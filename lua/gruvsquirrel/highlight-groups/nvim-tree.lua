@@ -1,5 +1,5 @@
 -- see https://github.com/nvim-tree/nvim-tree.lua/blob/e8a89db1bbc06510a76fc935754b4e99a3e5e8a7/doc/nvim-tree-lua.txt
-local with_meta = require("gruvsquirrel.util.tbl").with_meta
+local with_meta = require('gruvsquirrel.util.tbl').with_meta
 
 --- NvimTree Highlight Groups
 ---@class GruvsquirrelNvimTreeGroup

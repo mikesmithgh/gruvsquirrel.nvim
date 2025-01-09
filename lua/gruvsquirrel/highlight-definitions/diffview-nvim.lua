@@ -1,11 +1,11 @@
-local g = require("gruvsquirrel.highlight-groups.diffview-nvim")
-local mapper = require("gruvsquirrel.util.mapper")
+local g = require('gruvsquirrel.highlight-groups.diffview-nvim')
+local mapper = require('gruvsquirrel.util.mapper')
 
 local M = {
   attributes = function()
-    local d = require("gruvsquirrel.common.highlight_aliases").get()
-    return mapper.highlight_group_mapper {
-      { { g.DiffviewDim1 },   d.hickory_nut },
+    local d = require('gruvsquirrel.common.highlight_aliases').get()
+    return mapper.highlight_group_mapper({
+      { { g.DiffviewDim1 }, d.hickory_nut },
       { { g.DiffviewNormal }, d.cilantro },
       { { g.DiffviewNormal }, d.coconut },
 
@@ -47,8 +47,8 @@ local M = {
       -- DiffviewFilePanelConflicts = 'DiffviewFilePanelConflicts',
       -- DiffviewFilePanelDeletions = 'DiffviewFilePanelDeletions',
       -- DiffviewFilePanelInsertions = 'DiffviewFilePanelInsertions',
-    }
-  end
+    })
+  end,
 }
 
 return M
