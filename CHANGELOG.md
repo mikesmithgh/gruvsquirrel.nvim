@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.0...v1.6.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* add missing _ to terminal colors ([#102](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/102)) ([fbcf0db](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/fbcf0db26651807d84ee529287adc763141b77e0))
+
 # [1.6.0](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.5.0...v1.6.0) (2025-01-09)
 
 
