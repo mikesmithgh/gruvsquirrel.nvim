@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.1...v1.6.2) (2025-01-14)
+
+
+### Bug Fixes
+
+* add bg color to EndOfBuffer ([#104](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/104)) ([5bc40ad](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/5bc40ad95c6e9542251b6acf59191dee1b95b241))
+
 ## [1.6.1](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.0...v1.6.1) (2025-01-09)
 
 
