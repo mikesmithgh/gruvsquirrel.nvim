@@ -5,10 +5,10 @@ local M = {
   attributes = function()
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
-      { { g.NullLsInfoBorder }, d.doowhat },
-      { { g.NullLsInfoHeader }, d.lemongrass },
-      { { g.NullLsInfoSources }, d.jackfruit_seed },
-      { { g.NullLsInfoTitle }, d.basil },
+      { { g.NullLsInfoBorder }, d.fg_gray1_bg_dark6 },
+      { { g.NullLsInfoHeader }, d.fg_yellow0 },
+      { { g.NullLsInfoSources }, d.fg_orange0 },
+      { { g.NullLsInfoTitle }, d.fg_blue0 },
     })
   end,
 }

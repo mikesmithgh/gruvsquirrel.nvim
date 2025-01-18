@@ -7,17 +7,17 @@ local M = {
     return mapper.highlight_group_mapper({
       {
         { g.netrwComment, g.netrwComma, g.netrwHide, g.netrwHideSep },
-        d.hickory_nut,
+        d.fg_gray0_italic,
       },
       {
         { g.netrwCmdSep, g.netrwDateSep, g.netrwLink, g.netrwPix, g.netrwTimeSep },
-        d.jackfruit_seed,
+        d.fg_orange0,
       },
       {
         { g.netrwLib, g.netrwMakefile },
-        d.black_walnut,
+        d.bg_green1,
       },
-      { { g.netrwDir }, d.dorito },
+      { { g.netrwDir }, d.fg_blue0_bold },
       {
         {
           g.netrwData,
@@ -30,19 +30,19 @@ local M = {
           g.netrwTilde,
           g.netrwTmp,
         },
-        d.caraway,
+        d.fg_gray0_bg_dark0_italic,
       },
-      { { g.netrwClassify, g.netrwHelpCmd }, d.ginkgo_nut },
-      { { g.netrwVersion }, d.basil },
-      { { g.netrwQHTopic }, d.lavender },
-      { { g.netrwExe }, d.indian_nut },
-      { { g.netrwSymLink }, d.chia },
-      { { g.netrwTreeBar }, d.jackfruit_seed },
-      { { g.netrwHidePat }, d.basil },
-      { { g.netrwList }, d.basil },
-      { { g.netrwMarkFile }, d.filbert },
-      { { g.netrwCoreDump }, d.hazelnut },
-      { { g.netrwPlain, g.netrwHdr, g.netrwLex, g.netrwYacc }, d.cilantro },
+      { { g.netrwClassify, g.netrwHelpCmd }, d.fg_green0 },
+      { { g.netrwVersion }, d.fg_blue0 },
+      { { g.netrwQHTopic }, d.fg_purple0 },
+      { { g.netrwExe }, d.fg_blue4 },
+      { { g.netrwSymLink }, d.fg_yellow0_bold },
+      { { g.netrwTreeBar }, d.fg_orange0 },
+      { { g.netrwHidePat }, d.fg_blue0 },
+      { { g.netrwList }, d.fg_blue0 },
+      { { g.netrwMarkFile }, d.fg_gray6_bg_dark6_bold },
+      { { g.netrwCoreDump }, d.fg_red0_bold },
+      { { g.netrwPlain, g.netrwHdr, g.netrwLex, g.netrwYacc }, d.fg_light0_bg_dark0 },
     })
   end,
 }

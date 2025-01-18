@@ -5,9 +5,9 @@ local M = {
   attributes = function()
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
-      { { g.gitcommitHash }, d.basil },
-      { { g.gitcommitBlank }, d.candlenut },
-      { { g.gitcommitHeader }, d.ginkgo_nut },
+      { { g.gitcommitHash }, d.fg_blue0 },
+      { { g.gitcommitBlank }, d.fg_dark0_bg_red0_bold },
+      { { g.gitcommitHeader }, d.fg_green0 },
       {
         {
           g.gitcommitDiscardedArrow,
@@ -17,11 +17,11 @@ local M = {
           g.gitcommitOnBranch,
           g.gitcommitComment,
         },
-        d.hickory_nut,
+        d.fg_gray0_italic,
       },
-      { { g.gitcommitNoChanges }, d.indian_nut },
-      { { g.gitcommitNoBranch }, d.jackfruit_seed },
-      { { g.gitcommitBranch }, d.lavender },
+      { { g.gitcommitNoChanges }, d.fg_blue4 },
+      { { g.gitcommitNoBranch }, d.fg_orange0 },
+      { { g.gitcommitBranch }, d.fg_purple0 },
       {
         {
           g.gitcommitDiscardedType,
@@ -31,7 +31,7 @@ local M = {
           g.gitcommitTrailerToken,
           g.gitcommitSummary,
         },
-        d.lemon_balm,
+        d.fg_red0,
       },
       {
         {
@@ -41,7 +41,7 @@ local M = {
           g.gitcommitSelectedFile,
           g.gitcommitUnmergedFile,
         },
-        d.macadamia_nut,
+        d.fg_blue0_underline,
       },
     })
   end,

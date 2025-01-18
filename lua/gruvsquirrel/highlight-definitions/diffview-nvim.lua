@@ -5,9 +5,9 @@ local M = {
   attributes = function()
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
-      { { g.DiffviewDim1 }, d.hickory_nut },
-      { { g.DiffviewNormal }, d.cilantro },
-      { { g.DiffviewNormal }, d.coconut },
+      { { g.DiffviewDim1 }, d.fg_gray0_italic },
+      { { g.DiffviewNormal }, d.fg_light0_bg_dark0 },
+      { { g.DiffviewNormal }, d.fg_light0_bg_dark6 },
 
       -- DiffviewDiffAdd = 'DiffviewDiffAdd',
       -- DiffviewNonText = 'DiffviewNonText',
