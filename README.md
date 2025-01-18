@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" alt="gruvsquirrel" style="width: 15%" align="right" />
+<img src="https://user-images.githubusercontent.com/10135646/210930853-fc6e828a-d3fe-4a1c-83af-c24ec592b80b.png" alt="gruvsquirrel" align="right" width="50px" />
 
 # 🐿️ gruvsquirrel.nvim
 Neovim colorscheme written in Lua inspired by [gruvbox](https://github.com/morhetz/gruvbox)
