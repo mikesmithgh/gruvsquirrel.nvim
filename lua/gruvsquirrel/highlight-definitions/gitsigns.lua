@@ -7,7 +7,7 @@ local M = {
     return mapper.highlight_group_mapper({
       {
         { g.GitSignsAdd, g.GitSignsStagedAdd },
-        d.pecan,
+        d.fg_green8,
       },
       {
         {
@@ -17,7 +17,7 @@ local M = {
           g.GitSignsDeleteLnInline,
           g.GitSignsDeleteVirtLnInLine,
         },
-        d.beechnut,
+        d._reverse,
       },
       {
         {
@@ -28,39 +28,39 @@ local M = {
           g.GitSignsStagedAddLn,
           g.GitSignsStagedChangeLn,
         },
-        d.black_walnut,
+        d.bg_green1,
       },
       {
         { g.GitSignsAddNr, g.GitSignsStagedAddNr },
-        d.pignoli,
+        d.fg_light0_bg_green8,
       },
       {
         { g.GitSignsChange, g.GitSignsStagedChange },
-        d.pili_nut,
+        d.fg_green2,
       },
       {
         { g.GitSignsChangeDelete, g.GitSignsStagedChangedelete },
-        d.pine_nut,
+        d.fg_gray5,
       },
       {
         { g.GitSignsChangeDeleteLn, g.GitSignsStagedChangedeleteLn },
-        d.pistachio,
+        d.bg_orange4,
       },
       {
         { g.GitSignsChangeDeleteNr, g.GitSignsStagedChangedeleteNr },
-        d.poppy,
+        d.fg_dark3_bg_gray5,
       },
       {
         { g.GitSignsChangeInline, g.GitSignsChangeLnInline, g.GitSignsChangeLnVirtline },
-        d.brazil_nut,
+        d.fg_dark5_bg_green2,
       },
       {
         { g.GitSignsChangeNr, g.GitSignsStagedChangeNr },
-        d.pumpkin,
+        d.fg_dark3_bg_green2,
       },
       {
         { g.GitSignsCurrentLineBlame },
-        d.calend,
+        d.fg_gray1,
       },
       {
         {
@@ -69,11 +69,11 @@ local M = {
           g.GitSignsStagedDelete,
           g.GitSignsStagedTopdelete,
         },
-        d.quandong,
+        d.fg_purple4,
       },
       {
         { g.GitSignsUntracked, g.GitSignsUntrackedNr },
-        d.lavender,
+        d.fg_purple0,
       },
       {
         {
@@ -82,11 +82,11 @@ local M = {
           g.GitSignsStagedDeleteNr,
           g.GitSignsStagedTopdeleteNr,
         },
-        d.quinoa,
+        d.fg_light0_bg_purple4,
       },
       {
         { g.GitSignsDeletePreview, g.GitSignsDeleteVirtLn },
-        d.borage,
+        d.fg_dark0_bg_purple4,
       },
     })
   end,

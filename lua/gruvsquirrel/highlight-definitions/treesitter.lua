@@ -17,10 +17,10 @@ local M = {
           g['@symbol'],
           g['@text.attribute'],
         },
-        d.basil,
+        d.fg_blue0,
       },
-      { { g['@none'] }, d.calendula },
-      { { g['@text.danger'] }, d.candlenut },
+      { { g['@none'] }, d._none },
+      { { g['@text.danger'] }, d.fg_dark0_bg_red0_bold },
       {
         {
           g['@function'],
@@ -30,11 +30,11 @@ local M = {
           g['@text.title'],
           g['@text.diff.add'],
         },
-        d.ginkgo_nut,
+        d.fg_green0,
       },
-      { { g['@text.warning'] }, d.hazelnut },
-      { { g['@annotation'], g['@operator'] }, d.hibiscus },
-      { { g['@comment'] }, d.hickory_nut },
+      { { g['@text.warning'] }, d.fg_red0_bold },
+      { { g['@annotation'], g['@operator'] }, d.fg_orange0_italic },
+      { { g['@comment'] }, d.fg_gray0_italic },
       {
         {
           g['@preproc'],
@@ -48,7 +48,7 @@ local M = {
           g['@text.environment'],
           g['@struct'],
         },
-        d.indian_nut,
+        d.fg_blue4,
       },
       {
         {
@@ -74,10 +74,10 @@ local M = {
           g['@tag'],
           g['@tag.delimiter'],
         },
-        d.jackfruit_seed,
+        d.fg_orange0,
       },
-      { { g['@string'] }, d.kola_nut },
-      { { g['@string.regex'], g['@text.literal'] }, d.mustard },
+      { { g['@string'] }, d.fg_purple2_italic },
+      { { g['@string.regex'], g['@text.literal'] }, d.fg_green0_italic },
       {
         {
           g['@enumMember'],
@@ -88,7 +88,7 @@ local M = {
           g['@constant'],
           g['@text.reference'],
         },
-        d.lavender,
+        d.fg_purple0,
       },
       {
         {
@@ -101,7 +101,7 @@ local M = {
           g['@label'],
           g['@exception'],
         },
-        d.lemon_balm,
+        d.fg_red0,
       },
       {
         {
@@ -113,17 +113,17 @@ local M = {
           g['@type.qualifier'],
           g['@text.environment.name'],
         },
-        d.lemongrass,
+        d.fg_yellow0,
       },
-      { { g['@variable'], g['@namespace'], g['@text'] }, d.peanut },
-      { { g['@text.uri'], g['@text.underline'] }, d.macadamia_nut },
-      { { g['@text.todo'], g['@text.todo.unchecked'] }, d.malabar_chestnut },
-      { { g['@text.todo.checked'] }, d.marjoram },
-      { { g['@text.strong'] }, d.nasturtium },
-      { { g['@text.strike'] }, d.nigella },
-      { { g['@text.emphasis'] }, d.oregano },
-      { { g['@text.underline'] }, d.parsley },
-      { { g['@text.diff.delete'] }, d.maya_nut },
+      { { g['@variable'], g['@namespace'], g['@text'] }, d.fg_light0 },
+      { { g['@text.uri'], g['@text.underline'] }, d.fg_blue0_underline },
+      { { g['@text.todo'], g['@text.todo.unchecked'] }, d.fg_light2_bold_italic },
+      { { g['@text.todo.checked'] }, d.fg_orange0_bold_italic },
+      { { g['@text.strong'] }, d._bold },
+      { { g['@text.strike'] }, d._strikethrough },
+      { { g['@text.emphasis'] }, d._italic },
+      { { g['@text.underline'] }, d._underline },
+      { { g['@text.diff.delete'] }, d.fg_red2 },
     })
   end,
 }

@@ -4,13 +4,16 @@ local M = {
   attributes = function()
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
-      { { g.TelescopeNormal, g.TelescopePromptNormal, g.TelescopeResultsNormal }, d.coconut },
-      { { g.TelescopePreviewNormal }, d.cilantro },
+      {
+        { g.TelescopeNormal, g.TelescopePromptNormal, g.TelescopeResultsNormal },
+        d.fg_light0_bg_dark6,
+      },
+      { { g.TelescopePreviewNormal }, d.fg_light0_bg_dark0 },
       {
         {
           g.TelescopePreviewBorder,
         },
-        d.doowho,
+        d.fg_gray1_bg_dark0,
       },
       {
         {
@@ -18,9 +21,9 @@ local M = {
           g.TelescopePromptBorder,
           g.TelescopeResultsBorder,
         },
-        d.doowhat,
+        d.fg_gray1_bg_dark6,
       },
-      { { g.TelescopePreviewLine }, d.almond },
+      { { g.TelescopePreviewLine }, d.__bg_dark1_ctermfg_hack },
       {
         {
           g.TelescopeTitle,
@@ -28,17 +31,17 @@ local M = {
           g.TelescopePreviewTitle,
           g.TelescopeResultsTitle,
         },
-        d.whatdoo,
+        d.fg_dark6_bg_gray1_bold,
       },
 
-      { { g.TelescopePromptCounter }, d.ginkgo_nut },
+      { { g.TelescopePromptCounter }, d.fg_green0 },
 
-      { { g.TelescopeMatching, g.TelescopePreviewMatch }, d.celery },
+      { { g.TelescopeMatching, g.TelescopePreviewMatch }, d.fg_dark0_bg_green7 },
 
-      { { g.TelescopePromptPrefix, g.TelescopeResultsStruct }, d.indian_nut },
+      { { g.TelescopePromptPrefix, g.TelescopeResultsStruct }, d.fg_blue4 },
 
-      { { g.TelescopeSelection }, d.anise },
-      { { g.TelescopeSelectionCaret }, d.lemon_balm },
+      { { g.TelescopeSelection }, d.bg_dark3 },
+      { { g.TelescopeSelectionCaret }, d.fg_red0 },
       {
         {
           g.TelescopeMultiIcon,
@@ -48,45 +51,45 @@ local M = {
           g.TelescopeResultsMethod,
           g.TelescopeResultsDiffUntracked,
         },
-        d.lavender,
+        d.fg_purple0,
       },
       {
         { g.TelescopeMultiSelection },
-        d.whesha,
+        d.fg_gray0,
       },
       {
         { g.TelescopeResultsClass, g.TelescopeResultsField, g.TelescopeResultsFunction },
-        d.ginkgo_nut,
+        d.fg_green0,
       },
 
       {
         { g.TelescopeResultsOperator },
-        d.hibiscus,
+        d.fg_orange0_italic,
       },
       {
         { g.TelescopeResultsVariable, g.TelescopeResultsSpecialComment },
-        d.jackfruit_seed,
+        d.fg_orange0,
       },
 
       {
         { g.TelescopeResultsLineNr },
-        d.chickenbones,
+        d.fg_gray3,
       },
 
-      { { g.TelescopeResultsIdentifier }, d.basil },
+      { { g.TelescopeResultsIdentifier }, d.fg_blue0 },
 
       {
         { g.TelescopeResultsComment },
-        d.hickory_nut,
+        d.fg_gray0_italic,
       },
 
       {
         { g.TelescopeResultsDiffChange, g.TelescopeResultsDiffAdd },
-        d.black_walnut,
+        d.bg_green1,
       },
       {
         { g.TelescopeResultsDiffDelete },
-        d.borage,
+        d.fg_dark0_bg_purple4,
       },
     })
   end,
