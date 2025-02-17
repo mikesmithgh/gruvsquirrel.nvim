@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.2...v1.6.3) (2025-02-17)
+
+
+### Bug Fixes
+
+* add highlight for FzfLuaTitleFlags ([#108](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/108)) ([26375c2](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/26375c25c469db5f598413f472e8ec980c26db16))
+
 ## [1.6.2](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.1...v1.6.2) (2025-01-14)
 
 
