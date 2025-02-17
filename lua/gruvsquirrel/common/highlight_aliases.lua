@@ -105,6 +105,7 @@ local M = {
       fg_dark0_bg_yellow0 = { fg = c.dark0, bg = c.yellow0 },
       fg_dark0_bg_yellow0_bold = { fg = c.dark0, bg = c.yellow0, bold = true },
       fg_dark1_bg_dark0 = { fg = c.dark1, bg = c.dark0 },
+      fg_dark1_bg_gray1_bold_italic = { fg = c.dark1, bg = c.gray1, bold = true, italic = true },
       fg_dark1_bg_gray1_reverse = { fg = c.dark1, bg = c.gray1, reverse = true }, -- reverse to avoid odd issue with usings default fillchars, remove reverse to reproduce issue
       fg_dark3_bg_dark6 = { fg = c.dark3, bg = c.dark6 },
       fg_dark3_bg_gray5 = { fg = c.dark3, bg = c.gray5 },
