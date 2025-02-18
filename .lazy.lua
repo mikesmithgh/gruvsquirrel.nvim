@@ -1,9 +1,9 @@
+-- copied and modified from https://github.com/folke/tokyonight.nvim/blob/main/.lazy.lua
 local M = {
   module = 'gruvsquirrel',
   colorscheme = 'gruvsquirrel',
-  opts = { style = 'moon', plugins = { all = true } },
+  opts = {},
   globals = { vim = vim },
-  cache = {}, ---@type table<string, boolean>
 }
 
 local c = require('gruvsquirrel.colors').get()
