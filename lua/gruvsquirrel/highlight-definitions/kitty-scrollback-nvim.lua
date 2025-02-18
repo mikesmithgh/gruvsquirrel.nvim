@@ -6,9 +6,9 @@ local M = {
     return mapper.highlight_group_mapper({
       {
         { g.KittyScrollbackNvimPasteWinNormal, g.KittyScrollbackNvimPasteWinFloatTitle },
-        d.cilantro,
+        d.fg_light0_bg_dark0,
       },
-      { { g.KittyScrollbackNvimPasteWinFloatBorder }, d.doowho },
+      { { g.KittyScrollbackNvimPasteWinFloatBorder }, d.fg_gray1_bg_dark0 },
     })
   end,
 }

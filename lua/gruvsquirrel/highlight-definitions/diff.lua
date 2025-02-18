@@ -5,9 +5,9 @@ local M = {
   attributes = function()
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
-      { { g.diffAdded, g.diffFile, g.diffNewFile }, d.ginkgo_nut },
-      { { g.diffComment }, d.hickory_nut },
-      { { g.diffChanged, g.diffSubname, g.diffLine }, d.indian_nut },
+      { { g.diffAdded, g.diffFile, g.diffNewFile }, d.fg_green0 },
+      { { g.diffComment }, d.fg_gray0_italic },
+      { { g.diffChanged, g.diffSubname, g.diffLine }, d.fg_blue4 },
       {
         {
           g.diffOnly,
@@ -19,9 +19,9 @@ local M = {
           g.diffCommon,
           g.diffIndexLine,
         },
-        d.lavender,
+        d.fg_purple0,
       },
-      { { g.diffRemoved, g.diffOldFile }, d.maya_nut },
+      { { g.diffRemoved, g.diffOldFile }, d.fg_red2 },
     })
   end,
 }

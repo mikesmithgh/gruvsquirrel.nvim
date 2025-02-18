@@ -6,10 +6,10 @@ local M = {
     local d = require('gruvsquirrel.common.highlight_aliases').get()
     return mapper.highlight_group_mapper({
       -- highlight groups defined in LazyVim https://www.lazyvim.org/plugins/ui#alpha-nvim
-      { { g.AlphaHeader }, d.ginkgo_nut },
-      { { g.AlphaFooter }, d.hickory_nut },
-      { { g.AlphaButtons }, d.indian_nut },
-      { { g.AlphaShortcut, g.AlphaHeaderLabel }, d.pine_cone },
+      { { g.AlphaHeader }, d.fg_green0 },
+      { { g.AlphaFooter }, d.fg_gray0_italic },
+      { { g.AlphaButtons }, d.fg_blue4 },
+      { { g.AlphaShortcut, g.AlphaHeaderLabel }, d.fg_orange1 },
     })
   end,
 }

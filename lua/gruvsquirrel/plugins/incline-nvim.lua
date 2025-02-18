@@ -5,18 +5,18 @@ local function field_format()
   return next(d)
       and {
         name = {
-          guifg = d.hoiya.fg,
-          guibg = d.hoiya.bg,
+          guifg = d.fg_gray4_bg_dark1.fg,
+          guibg = d.fg_gray4_bg_dark1.bg,
         },
         num = {
-          guifg = d.whesha.fg,
+          guifg = d.fg_gray0.fg,
         },
         modified = {
-          guifg = d.jackfruit_seed.fg,
+          guifg = d.fg_orange0.fg,
         },
         blocks = {
           gui = 'bold',
-          guifg = d.acorn.bg,
+          guifg = d.bg_dark0.bg,
         },
       }
     or nil

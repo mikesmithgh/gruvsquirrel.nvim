@@ -2,33 +2,33 @@ local c = require('gruvsquirrel.colors').get('boxsquirrel')
 
 return {
   normal = {
-    a = { bg = c.rocky_0, fg = c.scrat_0, gui = 'bold' },
-    b = { bg = c.scrat_2, fg = c.rocky_4 },
-    c = { bg = c.scrat_6, fg = c.rocky_0 },
+    a = { bg = c.gray0, fg = c.dark0, gui = 'bold' },
+    b = { bg = c.dark2, fg = c.gray4 },
+    c = { bg = c.dark6, fg = c.gray0 },
   },
   insert = {
-    a = { bg = c.skippy_0, fg = c.scrat_0, gui = 'bold' },
-    b = { bg = c.scrat_2, fg = c.rocky_4 },
-    c = { bg = c.scrat_6, fg = c.rocky_0 },
+    a = { bg = c.blue4, fg = c.dark0, gui = 'bold' },
+    b = { bg = c.dark2, fg = c.gray4 },
+    c = { bg = c.dark6, fg = c.gray0 },
   },
   visual = {
-    a = { bg = c.hammy_0, fg = c.scrat_0, gui = 'bold' },
-    b = { bg = c.scrat_2, fg = c.rocky_4 },
-    c = { bg = c.scrat_6, fg = c.rocky_0 },
+    a = { bg = c.orange0, fg = c.dark0, gui = 'bold' },
+    b = { bg = c.dark2, fg = c.gray4 },
+    c = { bg = c.dark6, fg = c.gray0 },
   },
   replace = {
-    a = { bg = c.bucky_0, fg = c.scrat_0, gui = 'bold' },
-    b = { bg = c.scrat_2, fg = c.rocky_4 },
-    c = { bg = c.scrat_6, fg = c.rocky_0 },
+    a = { bg = c.red0, fg = c.dark0, gui = 'bold' },
+    b = { bg = c.dark2, fg = c.gray4 },
+    c = { bg = c.dark6, fg = c.gray0 },
   },
   command = {
-    a = { bg = c.doreen_0, fg = c.scrat_0, gui = 'bold' },
-    b = { bg = c.scrat_2, fg = c.rocky_4 },
-    c = { bg = c.scrat_6, fg = c.rocky_0 },
+    a = { bg = c.green0, fg = c.dark0, gui = 'bold' },
+    b = { bg = c.dark2, fg = c.gray4 },
+    c = { bg = c.dark6, fg = c.gray0 },
   },
   inactive = {
-    a = { bg = c.scrat_2, fg = c.rocky_4, gui = 'bold,italic' },
-    b = { bg = c.scrat_2, fg = c.rocky_4, gui = 'italic' },
-    c = { bg = c.scrat_6, fg = c.rocky_0, gui = 'italic' },
+    a = { bg = c.dark2, fg = c.gray4, gui = 'bold,italic' },
+    b = { bg = c.dark2, fg = c.gray4, gui = 'italic' },
+    c = { bg = c.dark6, fg = c.gray0, gui = 'italic' },
   },
 }
