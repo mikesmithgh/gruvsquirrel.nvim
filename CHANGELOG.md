@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.3...v1.6.4) (2025-04-03)
+
+
+### Bug Fixes
+
+* update k9s skin ([#109](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/109)) ([e290560](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/e2905607da584b4b8b21798690aa629836073343))
+
 ## [1.6.3](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.2...v1.6.3) (2025-02-17)
 
 
