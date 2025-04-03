@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.4...v1.6.5) (2025-04-03)
+
+
+### Bug Fixes
+
+* rename k9s skin from yml to yaml ([#110](https://github.com/mikesmithgh/gruvsquirrel.nvim/issues/110)) ([671383e](https://github.com/mikesmithgh/gruvsquirrel.nvim/commit/671383e95091874948ad75a9ab91e1826126df82))
+
 ## [1.6.4](https://github.com/mikesmithgh/gruvsquirrel.nvim/compare/v1.6.3...v1.6.4) (2025-04-03)
 
 
