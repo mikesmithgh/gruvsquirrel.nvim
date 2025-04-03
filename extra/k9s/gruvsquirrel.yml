@@ -28,6 +28,10 @@ seagreen: &seagreen "#8faa80"
 yellow: &yellow "#dbbc5f"
 goldenrod: &goldenrod "#b57614"
 
+bold: &bold "bold"
+normal: &normal "normal"
+dim: &dim "dim"
+
 k9s:
   body:
     fgColor:        *cadetblue
@@ -41,6 +45,9 @@ k9s:
     fgColor: *cadetblue
     bgColor: *black
     suggestColor: *dodgerblue
+    border: 
+      default: *aqua
+      command: *blue
   info:
     sectionColor: *white
     fgColor: *blue
@@ -59,6 +66,7 @@ k9s:
       focusColor: *lightslategray
     menu:
       fgColor: *white
+      fgStyle: *dim
       keyColor: *dodgerblue
       numKeyColor: *fuchsia
     crumbs:
@@ -119,13 +127,17 @@ k9s:
       colonColor: *orange
       valueColor: *papayawhip
     logs:
-      fgColor: *white
+      fgColor: *dodgerblue
       bgColor: *black
       indicator:
         fgColor: *dodgerblue
         bgColor: *black
         toggleOnColor: *green
         toggleOffColor: *gray
+    picker:
+      mainColor: *white
+      focusColor: *aqua
+      shortcutColor: *aqua
   help:
     fgColor: *white
     bgColor: *black
